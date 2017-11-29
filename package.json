@@ -1,0 +1,28 @@
+{
+  "name": "hiu-ui",
+  "version": "0.0.1",
+  "description": "sleek & strong impression ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frizadiga/hiu-ui.git"
+  },
+  "keywords": [
+    "ui",
+    "framework",
+    "design",
+    "sleek",
+    "material",
+    "css",
+    "javascript"
+  ],
+  "author": "frizadiga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frizadiga/hiu-ui/issues"
+  },
+  "homepage": "https://github.com/frizadiga/hiu-ui#readme"
+}
