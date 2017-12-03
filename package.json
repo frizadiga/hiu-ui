@@ -24,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/frizadiga/hiu-ui/issues"
   },
-  "homepage": "https://github.com/frizadiga/hiu-ui#readme"
+  "homepage": "https://github.com/frizadiga/hiu-ui#readme",
+  "devDependencies": {
+    "webpack": "^3.9.1",
+    "webpack-dev-server": "^2.9.5"
+  }
 }
