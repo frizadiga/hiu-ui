@@ -5,5 +5,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'hiu-ui-min.css'
-  }
+  },
+  module: {
+    rules: []
+  },
+  plugins: []
 };
