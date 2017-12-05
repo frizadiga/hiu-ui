@@ -4,7 +4,7 @@ module.exports = {
   entry: './app.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'hiu-ui-min.css'
+    filename: 'bundle.js'
   },
   module: {
     rules: []
