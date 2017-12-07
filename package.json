@@ -1,5 +1,5 @@
 {
-  "name": "i",
+  "name": "ikan",
   "version": "0.0.1",
   "description": "sleek & strong impression ui",
   "main": "./src/app.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frizadiga/i.git"
+    "url": "git+https://github.com/frizadiga/ikan.git"
   },
   "keywords": [
     "ui",
@@ -22,11 +22,12 @@
   "author": "frizadiga",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/frizadiga/i/issues"
+    "url": "https://github.com/frizadiga/ikan/issues"
   },
-  "homepage": "https://github.com/frizadiga/i#readme",
+  "homepage": "https://github.com/frizadiga/ikan#readme",
   "devDependencies": {
     "webpack": "^3.9.1",
     "webpack-dev-server": "^2.9.5"
-  }
+  },
+  "dependencies": {}
 }
