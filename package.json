@@ -26,8 +26,10 @@
   },
   "homepage": "https://github.com/frizadiga/ikan#readme",
   "devDependencies": {
-    "webpack": "^3.9.1",
-    "webpack-dev-server": "^2.9.5"
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
   },
   "dependencies": {}
 }
