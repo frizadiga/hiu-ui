@@ -1,14 +1,14 @@
 {
-  "name": "hiu-ui",
+  "name": "i",
   "version": "0.0.1",
   "description": "sleek & strong impression ui",
-  "main": "index.js",
+  "main": "./src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frizadiga/hiu-ui.git"
+    "url": "git+https://github.com/frizadiga/i.git"
   },
   "keywords": [
     "ui",
@@ -22,9 +22,9 @@
   "author": "frizadiga",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/frizadiga/hiu-ui/issues"
+    "url": "https://github.com/frizadiga/i/issues"
   },
-  "homepage": "https://github.com/frizadiga/hiu-ui#readme",
+  "homepage": "https://github.com/frizadiga/i#readme",
   "devDependencies": {
     "webpack": "^3.9.1",
     "webpack-dev-server": "^2.9.5"
