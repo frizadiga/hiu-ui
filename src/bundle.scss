@@ -86,7 +86,7 @@ $font_7: courier new;
 }
 
 //original selectors
-//.u-table, .u-table-all
+//.i-table, .i-table-all
 %extend_4 {
   border-collapse: collapse;
   border-spacing: 0;
@@ -95,7 +95,7 @@ $font_7: courier new;
 }
 
 //original selectors
-//.u-table td, .u-table th, .u-table-all td, .u-table-all th
+//.i-table td, .i-table th, .i-table-all td, .i-table-all th
 %extend_5 {
   padding: 8px;
   display: table-cell;
@@ -104,7 +104,7 @@ $font_7: courier new;
 }
 
 //original selectors
-//.u-btn, .u-button
+//.i-btn, .i-button
 %extend_6 {
   border: none;
   display: inline-block;
@@ -123,7 +123,7 @@ $font_7: courier new;
 }
 
 //original selectors
-//.u-badge, .u-tag
+//.i-badge, .i-tag
 %extend_7 {
   background-color: $black;
   color: $white;
@@ -134,7 +134,7 @@ $font_7: courier new;
 }
 
 //original selectors
-//.u-dropdown-click, .u-dropdown-hover
+//.i-dropdown-click, .i-dropdown-hover
 %extend_8 {
   position: relative;
   display: inline-block;
@@ -142,7 +142,7 @@ $font_7: courier new;
 }
 
 //original selectors
-//.u-check, .u-radio
+//.i-check, .i-radio
 %extend_9 {
   width: 24px;
   height: 24px;
@@ -151,7 +151,7 @@ $font_7: courier new;
 }
 
 //original selectors
-//.u-bar-block .u-dropdown-hover .u-button, .u-bar-block .u-dropdown-click .u-button
+//.i-bar-block .i-dropdown-hover .i-button, .i-bar-block .i-dropdown-click .i-button
 %extend_10 {
   width: 100%;
   text-align: left;
@@ -159,7 +159,7 @@ $font_7: courier new;
 }
 
 //original selectors
-//.u-container:after, .u-container:before, .u-panel:after, .u-panel:before, .u-row:after, .u-row:before, .u-row-padding:after, .u-row-padding:before, .u-cell-row:before, .u-cell-row:after, .u-clear:after, .u-clear:before, .u-bar:before, .u-bar:after
+//.i-container:after, .i-container:before, .i-panel:after, .i-panel:before, .i-row:after, .i-row:before, .i-row-padding:after, .i-row-padding:before, .i-cell-row:before, .i-cell-row:after, .i-clear:after, .i-clear:before, .i-bar:before, .i-bar:after
 %extend_11 {
   content: "";
   display: table;
@@ -416,17 +416,17 @@ h6 {
   font-size: 16px;
   @extend %extend_3;
 }
-.u-serif {
+.i-serif {
   font-family: $font_3;
 }
-.u-wide {
+.i-wide {
   letter-spacing: 4px;
 }
-.u-image {
+.i-image {
   max-width: 100%;
   height: auto;
 }
-.u-table {
+.i-table {
   @extend %extend_4;
   td {
     @extend %extend_5;
@@ -441,7 +441,7 @@ h6 {
     }
   }
 }
-.u-table-all {
+.i-table-all {
   @extend %extend_4;
   border: 1px solid $color_celeste_approx;
   tr {
@@ -466,7 +466,7 @@ h6 {
     }
   }
 }
-.u-ul {
+.i-ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -477,11 +477,11 @@ h6 {
       border-bottom: none;
     }
   }
-  &.u-hoverable li:hover {
+  &.i-hoverable li:hover {
     background-color: $color_celeste_approx;
   }
 }
-.u-btn {
+.i-btn {
   @extend %extend_6;
   &:hover {
     //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
@@ -495,12 +495,12 @@ h6 {
       box-shadow: none;
     }
   }
-  &.u-disabled:hover {
+  &.i-disabled:hover {
     //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
     box-shadow: none;
   }
 }
-.u-button {
+.i-button {
   @extend %extend_6;
   &:disabled {
     cursor: not-allowed;
@@ -511,80 +511,80 @@ h6 {
     background-color: $color_celeste_approx!important;
   }
 }
-.u-disabled {
+.i-disabled {
   cursor: not-allowed;
   opacity: 0.3;
   * {
     pointer-events: none;
   }
 }
-.u-badge {
+.i-badge {
   @extend %extend_7;
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
   border-radius: 50%;
 }
-.u-tag {
+.i-tag {
   @extend %extend_7;
 }
-.u-tooltip {
+.i-tooltip {
   position: relative;
-  .u-text {
+  .i-text {
     display: none;
   }
-  &:hover .u-text {
+  &:hover .i-text {
     display: inline-block;
   }
 }
-.u-display-container {
+.i-display-container {
   position: relative;
   &:hover {
-    .u-display-hover {
+    .i-display-hover {
       display: block;
     }
-    span.u-display-hover {
+    span.i-display-hover {
       display: inline-block;
     }
   }
 }
-.u-ripple {
+.i-ripple {
   //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
   transition: opacity 0s;
   &:active {
     opacity: 0.5;
   }
 }
-.u-input {
+.i-input {
   padding: 8px;
   display: block;
   border: none;
   border-bottom: 1px solid $color_celeste_approx;
   width: 100%;
 }
-.u-select {
+.i-select {
   padding: 9px 0;
   width: 100%;
   border: none;
   border-bottom: 1px solid $color_celeste_approx;
 }
-.u-dropdown-click {
+.i-dropdown-click {
   @extend %extend_8;
   &:hover {
     background-color: $color_celeste_approx;
     color: $black;
-    > .u-button:first-child {
+    > .i-button:first-child {
       background-color: $color_celeste_approx;
       color: $black;
     }
   }
 }
-.u-dropdown-hover {
+.i-dropdown-hover {
   @extend %extend_8;
   &:hover {
-    .u-dropdown-content {
+    .i-dropdown-content {
       display: block;
       z-index: 1;
     }
-    > .u-button:first-child {
+    > .i-button:first-child {
       background-color: $color_celeste_approx;
       color: $black;
     }
@@ -594,7 +594,7 @@ h6 {
     color: $black;
   }
 }
-.u-dropdown-content {
+.i-dropdown-content {
   cursor: auto;
   color: $black;
   background-color: $white;
@@ -604,13 +604,13 @@ h6 {
   margin: 0;
   padding: 0;
 }
-.u-check {
+.i-check {
   @extend %extend_9;
 }
-.u-radio {
+.i-radio {
   @extend %extend_9;
 }
-.u-sidebar {
+.i-sidebar {
   height: 100%;
   width: 200px;
   background-color: $white;
@@ -618,26 +618,26 @@ h6 {
   z-index: 1;
   overflow: auto;
 }
-.u-bar-block {
-  .u-dropdown-hover {
+.i-bar-block {
+  .i-dropdown-hover {
     width: 100%;
-    .u-dropdown-content {
+    .i-dropdown-content {
       min-width: 100%;
     }
-    .u-button {
+    .i-button {
       @extend %extend_10;
     }
   }
-  .u-dropdown-click {
+  .i-dropdown-click {
     width: 100%;
-    .u-dropdown-content {
+    .i-dropdown-content {
       min-width: 100%;
     }
-    .u-button {
+    .i-button {
       @extend %extend_10;
     }
   }
-  .u-bar-item {
+  .i-bar-item {
     width: 100%;
     display: block;
     padding: 8px 16px;
@@ -647,11 +647,11 @@ h6 {
     white-space: normal;
     float: none;
   }
-  &.u-center .u-bar-item {
+  &.i-center .i-bar-item {
     text-align: center;
   }
 }
-.u-main {
+.i-main {
   //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
   transition: margin-left .4s;
 }
@@ -659,7 +659,7 @@ h6 {
   //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
   transition: margin-left .4s;
 }
-.u-modal {
+.i-modal {
   z-index: 3;
   display: none;
   padding-top: 100px;
@@ -672,7 +672,7 @@ h6 {
   background-color: $black;
   background-color: $black_40;
 }
-.u-modal-content {
+.i-modal-content {
   margin: auto;
   background-color: $white;
   position: relative;
@@ -680,10 +680,10 @@ h6 {
   outline: 0;
   width: 600px;
 }
-.u-bar {
+.i-bar {
   width: 100%;
   overflow: hidden;
-  .u-bar-item {
+  .i-bar-item {
     padding: 8px 16px;
     float: left;
     width: auto;
@@ -691,15 +691,15 @@ h6 {
     outline: none;
     display: block;
   }
-  .u-dropdown-hover {
+  .i-dropdown-hover {
     position: static;
     float: left;
   }
-  .u-dropdown-click {
+  .i-dropdown-click {
     position: static;
     float: left;
   }
-  .u-button {
+  .i-button {
     white-space: normal;
   }
   &:before {
@@ -709,22 +709,22 @@ h6 {
     @extend %extend_11;
   }
 }
-.u-center {
+.i-center {
   text-align: center!important;
-  .u-bar {
+  .i-bar {
     display: inline-block;
     width: auto;
   }
 }
-.u-block {
+.i-block {
   display: block;
   width: 100%;
 }
-.u-responsive {
+.i-responsive {
   display: block;
   overflow-x: auto;
 }
-.u-container {
+.i-container {
   padding: 0.01em 16px;
   &:after {
     @extend %extend_11;
@@ -733,7 +733,7 @@ h6 {
     @extend %extend_11;
   }
 }
-.u-panel {
+.i-panel {
   padding: 0.01em 16px;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -744,7 +744,7 @@ h6 {
     @extend %extend_11;
   }
 }
-.u-row {
+.i-row {
   &:after {
     @extend %extend_11;
   }
@@ -752,7 +752,7 @@ h6 {
     @extend %extend_11;
   }
 }
-.u-row-padding {
+.i-row-padding {
   padding: 0 8px;
   &:after {
     @extend %extend_11;
@@ -761,27 +761,27 @@ h6 {
     @extend %extend_11;
   }
   > {
-    .u-half {
+    .i-half {
       padding: 0 8px;
     }
-    .u-third {
+    .i-third {
       padding: 0 8px;
     }
-    .u-twothird {
+    .i-twothird {
       padding: 0 8px;
     }
-    .u-threequarter {
+    .i-threequarter {
       padding: 0 8px;
     }
-    .u-quarter {
+    .i-quarter {
       padding: 0 8px;
     }
-    .u-col {
+    .i-col {
       padding: 0 8px;
     }
   }
 }
-.u-cell-row {
+.i-cell-row {
   display: table;
   width: 100%;
   &:before {
@@ -791,7 +791,7 @@ h6 {
     @extend %extend_11;
   }
 }
-.u-clear {
+.i-clear {
   &:after {
     @extend %extend_11;
   }
@@ -799,7 +799,7 @@ h6 {
     @extend %extend_11;
   }
 }
-.u-col {
+.i-col {
   float: left;
   width: 100%;
   &.s1 {
@@ -839,28 +839,28 @@ h6 {
     width: 99.99999%;
   }
 }
-.u-half {
+.i-half {
   float: left;
   width: 100%;
 }
-.u-third {
+.i-third {
   float: left;
   width: 100%;
 }
-.u-twothird {
+.i-twothird {
   float: left;
   width: 100%;
 }
-.u-threequarter {
+.i-threequarter {
   float: left;
   width: 100%;
 }
-.u-quarter {
+.i-quarter {
   float: left;
   width: 100%;
 }
 @media(min-width: 601px) {
-  .u-col {
+  .i-col {
     &.m1 {
       width: 8.33333%;
     }
@@ -898,24 +898,24 @@ h6 {
       width: 99.99999%;
     }
   }
-  .u-quarter {
+  .i-quarter {
     width: 24.99999%;
   }
-  .u-third {
+  .i-third {
     width: 33.33333%;
   }
-  .u-half {
+  .i-half {
     width: 49.99999%;
   }
-  .u-twothird {
+  .i-twothird {
     width: 66.66666%;
   }
-  .u-threequarter {
+  .i-threequarter {
     width: 74.99999%;
   }
 }
 @media(min-width: 993px) {
-  .u-col {
+  .i-col {
     &.l1 {
       width: 8.33333%;
     }
@@ -953,127 +953,127 @@ h6 {
       width: 99.99999%;
     }
   }
-  .u-modal-content {
+  .i-modal-content {
     width: 900px;
   }
-  .u-hide-large {
+  .i-hide-large {
     display: none!important;
   }
-  .u-sidebar.u-collapse {
+  .i-sidebar.i-collapse {
     display: block!important;
   }
 }
-.u-content {
+.i-content {
   max-width: 980px;
   margin: auto;
 }
-.u-rest {
+.i-rest {
   overflow: hidden;
 }
-.u-cell {
+.i-cell {
   display: table-cell;
 }
-.u-cell-top {
+.i-cell-top {
   vertical-align: top;
 }
-.u-cell-middle {
+.i-cell-middle {
   vertical-align: middle;
 }
-.u-cell-bottom {
+.i-cell-bottom {
   vertical-align: bottom;
 }
-.u-hide {
+.i-hide {
   display: none!important;
 }
-.u-show-block {
+.i-show-block {
   display: block!important;
 }
-.u-show {
+.i-show {
   display: block!important;
 }
-.u-show-inline-block {
+.i-show-inline-block {
   display: inline-block!important;
 }
 @media(max-width: 600px) {
-  .u-modal-content {
+  .i-modal-content {
     margin: 0 10px;
     width: auto!important;
   }
-  .u-modal {
+  .i-modal {
     padding-top: 30px;
   }
-  .u-hide-small {
+  .i-hide-small {
     display: none!important;
   }
-  .u-mobile {
+  .i-mobile {
     display: block;
     width: 100%!important;
   }
-  .u-dropdown-hover.u-mobile {
+  .i-dropdown-hover.i-mobile {
     text-align: center;
     width: 100%;
-    .u-dropdown-content {
+    .i-dropdown-content {
       position: relative;
     }
-    .u-btn {
+    .i-btn {
       width: 100%;
     }
-    .u-button {
+    .i-button {
       width: 100%;
     }
   }
-  .u-dropdown-click.u-mobile {
+  .i-dropdown-click.i-mobile {
     text-align: center;
     width: 100%;
-    .u-dropdown-content {
+    .i-dropdown-content {
       position: relative;
     }
-    .u-btn {
+    .i-btn {
       width: 100%;
     }
-    .u-button {
+    .i-button {
       width: 100%;
     }
   }
-  .u-bar-item.u-mobile {
+  .i-bar-item.i-mobile {
     text-align: center;
   }
 }
 @media(max-width: 768px) {
-  .u-modal-content {
+  .i-modal-content {
     width: 500px;
   }
-  .u-modal {
+  .i-modal {
     padding-top: 50px;
   }
 }
 @media(max-width: 992px) and(min-width: 601px) {
-  .u-hide-medium {
+  .i-hide-medium {
     display: none!important;
   }
 }
 @media(max-width: 992px) {
-  .u-main {
+  .i-main {
     margin-left: 0!important;
     margin-right: 0!important;
   }
-  .u-sidebar.u-collapse {
+  .i-sidebar.i-collapse {
     display: none;
   }
 }
-.u-top {
+.i-top {
   position: fixed;
   width: 100%;
   z-index: 1;
   top: 0;
 }
-.u-bottom {
+.i-bottom {
   position: fixed;
   width: 100%;
   z-index: 1;
   bottom: 0;
 }
-.u-overlay {
+.i-overlay {
   position: fixed;
   display: none;
   width: 100%;
@@ -1085,96 +1085,96 @@ h6 {
   background-color: $black_50;
   z-index: 2;
 }
-.u-display-topleft {
+.i-display-topleft {
   position: absolute;
   left: 0;
   top: 0;
 }
-.u-display-topright {
+.i-display-topright {
   position: absolute;
   right: 0;
   top: 0;
 }
-.u-display-bottomleft {
+.i-display-bottomleft {
   position: absolute;
   left: 0;
   bottom: 0;
 }
-.u-display-bottomright {
+.i-display-bottomright {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-.u-display-middle {
+.i-display-middle {
   position: absolute;
   top: 50%;
   left: 50%;
   //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
   transform: translate(-50%, -50%);
 }
-.u-display-left {
+.i-display-left {
   position: absolute;
   top: 50%;
   left: 0;
   //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
   transform: translate(0%, -50%);
 }
-.u-display-right {
+.i-display-right {
   position: absolute;
   top: 50%;
   right: 0;
   //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
   transform: translate(0%, -50%);
 }
-.u-display-topmiddle {
+.i-display-topmiddle {
   position: absolute;
   left: 50%;
   top: 0;
   //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
   transform: translate(-50%, 0);
 }
-.u-display-bottommiddle {
+.i-display-bottommiddle {
   position: absolute;
   left: 50%;
   bottom: 0;
   //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
   transform: translate(-50%, 0);
 }
-.u-display-hover {
+.i-display-hover {
   display: none;
 }
-.u-display-position {
+.i-display-position {
   position: absolute;
 }
-.u-circle {
+.i-circle {
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
   border-radius: 50%;
 }
-.u-round-small {
+.i-round-small {
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
   border-radius: 2px;
 }
-.u-round {
+.i-round {
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
   border-radius: 4px;
 }
-.u-round-medium {
+.i-round-medium {
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
   border-radius: 4px;
 }
-.u-round-large {
+.i-round-large {
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
   border-radius: 8px;
 }
-.u-round-xlarge {
+.i-round-xlarge {
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
   border-radius: 16px;
 }
-.u-round-xxlarge {
+.i-round-xxlarge {
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
   border-radius: 32px;
 }
-.u-code {
+.i-code {
   font-family: $font_6, $font_7;
   font-size: 16px;
   width: auto;
@@ -1185,7 +1185,7 @@ h6 {
   margin-top: 16px!important;
   margin-bottom: 16px!important;
 }
-.u-codespan {
+.i-codespan {
   font-family: $font_6, $font_7;
   font-size: 16px;
   color: $crimson;
@@ -1194,19 +1194,19 @@ h6 {
   padding-right: 4px;
   font-size: 110%;
 }
-.u-card {
+.i-card {
   //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
   box-shadow: 0 2px 5px 0 $black_16, 0 2px 10px 0 $black_12;
 }
-.u-card-2 {
+.i-card-2 {
   //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
   box-shadow: 0 2px 5px 0 $black_16, 0 2px 10px 0 $black_12;
 }
-.u-card-4 {
+.i-card-4 {
   //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
   box-shadow: 0 4px 10px 0 $black_20, 0 4px 20px 0 $black_19;
 }
-.u-spin {
+.i-spin {
   animation: u-spin 2s infinite linear;
 }
 @keyframes u-spin {
@@ -1219,7 +1219,7 @@ h6 {
     transform: rotate(359deg);
   }
 }
-.u-animate-fading {
+.i-animate-fading {
   animation: fading 10s infinite;
 }
 @keyframes fading {
@@ -1233,7 +1233,7 @@ h6 {
     opacity: 0;
   }
 }
-.u-animate-opacity {
+.i-animate-opacity {
   animation: opac 0.8s;
 }
 @keyframes opac {
@@ -1244,7 +1244,7 @@ h6 {
     opacity: 1;
   }
 }
-.u-animate-top {
+.i-animate-top {
   position: relative;
   animation: animatetop 0.4s;
 }
@@ -1258,7 +1258,7 @@ h6 {
     opacity: 1;
   }
 }
-.u-animate-left {
+.i-animate-left {
   position: relative;
   animation: animateleft 0.4s;
 }
@@ -1272,7 +1272,7 @@ h6 {
     opacity: 1;
   }
 }
-.u-animate-right {
+.i-animate-right {
   position: relative;
   animation: animateright 0.4s;
 }
@@ -1286,7 +1286,7 @@ h6 {
     opacity: 1;
   }
 }
-.u-animate-bottom {
+.i-animate-bottom {
   position: relative;
   animation: animatebottom 0.4s;
 }
@@ -1300,7 +1300,7 @@ h6 {
     opacity: 1;
   }
 }
-.u-animate-zoom {
+.i-animate-zoom {
   animation: animatezoom 0.6s;
 }
 @keyframes animatezoom {
@@ -1313,498 +1313,498 @@ h6 {
     transform: scale(1);
   }
 }
-.u-animate-input {
+.i-animate-input {
   //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
   transition: width 0.4s ease-in-out;
   &:focus {
     width: 100%!important;
   }
 }
-.u-opacity {
+.i-opacity {
   opacity: 0.60;
 }
-.u-opacity-off {
+.i-opacity-off {
   opacity: 1;
 }
-.u-opacity-max {
+.i-opacity-max {
   opacity: 0.25;
 }
-.u-opacity-min {
+.i-opacity-min {
   opacity: 0.75;
 }
-.u-greyscale-max {
+.i-greyscale-max {
   filter: grayscale(100%);
 }
-.u-grayscale-max {
+.i-grayscale-max {
   filter: grayscale(100%);
 }
-.u-greyscale {
+.i-greyscale {
   filter: grayscale(75%);
 }
-.u-grayscale {
+.i-grayscale {
   filter: grayscale(75%);
 }
-.u-greyscale-min {
+.i-greyscale-min {
   filter: grayscale(50%);
 }
-.u-grayscale-min {
+.i-grayscale-min {
   filter: grayscale(50%);
 }
-.u-sepia {
+.i-sepia {
   filter: sepia(75%);
 }
-.u-sepia-max {
+.i-sepia-max {
   filter: sepia(100%);
 }
-.u-sepia-min {
+.i-sepia-min {
   filter: sepia(50%);
 }
-.u-tiny {
+.i-tiny {
   font-size: 10px!important;
 }
-.u-small {
+.i-small {
   font-size: 12px!important;
 }
-.u-medium {
+.i-medium {
   font-size: 15px!important;
 }
-.u-large {
+.i-large {
   font-size: 18px!important;
 }
-.u-xlarge {
+.i-xlarge {
   font-size: 24px!important;
 }
-.u-xxlarge {
+.i-xxlarge {
   font-size: 36px!important;
 }
-.u-xxxlarge {
+.i-xxxlarge {
   font-size: 48px!important;
 }
-.u-jumbo {
+.i-jumbo {
   font-size: 64px!important;
 }
-.u-left-align {
+.i-left-align {
   text-align: left!important;
 }
-.u-right-align {
+.i-right-align {
   text-align: right!important;
 }
-.u-justify {
+.i-justify {
   text-align: justify!important;
 }
-.u-border-0 {
+.i-border-0 {
   border: 0!important;
 }
-.u-border {
+.i-border {
   border: 1px solid $color_celeste_approx!important;
 }
-.u-border-top {
+.i-border-top {
   border-top: 1px solid $color_celeste_approx!important;
 }
-.u-border-bottom {
+.i-border-bottom {
   border-bottom: 1px solid $color_celeste_approx!important;
 }
-.u-border-left {
+.i-border-left {
   border-left: 1px solid $color_celeste_approx!important;
 }
-.u-border-right {
+.i-border-right {
   border-right: 1px solid $color_celeste_approx!important;
 }
-.u-topbar {
+.i-topbar {
   border-top: 6px solid $color_celeste_approx!important;
 }
-.u-bottombar {
+.i-bottombar {
   border-bottom: 6px solid $color_celeste_approx!important;
 }
-.u-leftbar {
+.i-leftbar {
   border-left: 6px solid $color_celeste_approx!important;
 }
-.u-rightbar {
+.i-rightbar {
   border-right: 6px solid $color_celeste_approx!important;
 }
-.u-section {
+.i-section {
   margin-top: 16px!important;
   margin-bottom: 16px!important;
 }
-.u-margin {
+.i-margin {
   margin: 16px!important;
 }
-.u-margin-top {
+.i-margin-top {
   margin-top: 16px!important;
 }
-.u-margin-bottom {
+.i-margin-bottom {
   margin-bottom: 16px!important;
 }
-.u-margin-left {
+.i-margin-left {
   margin-left: 16px!important;
 }
-.u-margin-right {
+.i-margin-right {
   margin-right: 16px!important;
 }
-.u-padding-small {
+.i-padding-small {
   padding: 4px 8px!important;
 }
-.u-padding {
+.i-padding {
   padding: 8px 16px!important;
 }
-.u-padding-large {
+.i-padding-large {
   padding: 12px 24px!important;
 }
-.u-padding-16 {
+.i-padding-16 {
   padding-top: 16px!important;
   padding-bottom: 16px!important;
 }
-.u-padding-24 {
+.i-padding-24 {
   padding-top: 24px!important;
   padding-bottom: 24px!important;
 }
-.u-padding-32 {
+.i-padding-32 {
   padding-top: 32px!important;
   padding-bottom: 32px!important;
 }
-.u-padding-48 {
+.i-padding-48 {
   padding-top: 48px!important;
   padding-bottom: 48px!important;
 }
-.u-padding-64 {
+.i-padding-64 {
   padding-top: 64px!important;
   padding-bottom: 64px!important;
 }
-.u-left {
+.i-left {
   float: left!important;
 }
-.u-right {
+.i-right {
   float: right!important;
 }
-.u-transparent {
+.i-transparent {
   background-color: transparent!important;
 }
-.u-amber {
+.i-amber {
   color: $black!important;
   background-color: $color_amber_approx!important;
 }
-.u-aqua {
+.i-aqua {
   color: $black!important;
   background-color: $cyan_aqua!important;
 }
-.u-blue {
+.i-blue {
   color: $white!important;
   background-color: $color_dodger_blue_approx!important;
 }
-.u-light-blue {
+.i-light-blue {
   color: $black!important;
   background-color: $color_seagull_approx!important;
 }
-.u-brown {
+.i-brown {
   color: $white!important;
   background-color: $color_roman_coffee_approx!important;
 }
-.u-cyan {
+.i-cyan {
   color: $black!important;
   background-color: $color_robins_egg_blue_approx!important;
 }
-.u-blue-grey {
+.i-blue-grey {
   color: $white!important;
   background-color: $color_smalt_blue_approx!important;
 }
-.u-blue-gray {
+.i-blue-gray {
   color: $white!important;
   background-color: $color_smalt_blue_approx!important;
 }
-.u-green {
+.i-green {
   color: $white!important;
   background-color: $color_apple_approx!important;
 }
-.u-light-green {
+.i-light-green {
   color: $black!important;
   background-color: $color_sushi_approx!important;
 }
-.u-indigo {
+.i-indigo {
   color: $white!important;
   background-color: $color_cerulean_blue_approx!important;
 }
-.u-khaki {
+.i-khaki {
   color: $black!important;
   background-color: $khaki!important;
 }
-.u-lime {
+.i-lime {
   color: $black!important;
   background-color: $color_pear_approx!important;
 }
-.u-orange {
+.i-orange {
   color: $black!important;
   background-color: $color_california_approx!important;
 }
-.u-deep-orange {
+.i-deep-orange {
   color: $white!important;
   background-color: $color_flamingo_approx!important;
 }
-.u-pink {
+.i-pink {
   color: $white!important;
   background-color: $color_razzmatazz_approx!important;
 }
-.u-purple {
+.i-purple {
   color: $white!important;
   background-color: $color_violet_eggplant_approx!important;
 }
-.u-deep-purple {
+.i-deep-purple {
   color: $white!important;
   background-color: $color_purple_heart_approx!important;
 }
-.u-red {
+.i-red {
   color: $white!important;
   background-color: $color_red_orange_approx!important;
 }
-.u-sand {
+.i-sand {
   color: $black!important;
   background-color: $old_lace!important;
 }
-.u-teal {
+.i-teal {
   color: $white!important;
   background-color: $color_gossamer_approx!important;
 }
-.u-yellow {
+.i-yellow {
   color: $black!important;
   background-color: $color_golden_fizz_approx!important;
 }
-.u-white {
+.i-white {
   color: $black!important;
   background-color: $white!important;
 }
-.u-black {
+.i-black {
   color: $white!important;
   background-color: $black!important;
 }
-.u-grey {
+.i-grey {
   color: $black!important;
   background-color: $color_star_dust_approx!important;
 }
-.u-gray {
+.i-gray {
   color: $black!important;
   background-color: $color_star_dust_approx!important;
 }
-.u-light-grey {
+.i-light-grey {
   color: $black!important;
   background-color: $seashell!important;
 }
-.u-light-gray {
+.i-light-gray {
   color: $black!important;
   background-color: $seashell!important;
 }
-.u-dark-grey {
+.i-dark-grey {
   color: $white!important;
   background-color: $color_storm_dust_approx!important;
 }
-.u-dark-gray {
+.i-dark-gray {
   color: $white!important;
   background-color: $color_storm_dust_approx!important;
 }
-.u-pale-red {
+.i-pale-red {
   color: $black!important;
   background-color: $color_pippin_approx!important;
 }
-.u-pale-green {
+.i-pale-green {
   color: $black!important;
   background-color: $color_snowy_mint_approx!important;
 }
-.u-pale-yellow {
+.i-pale-yellow {
   color: $black!important;
   background-color: $color_cream_approx!important;
 }
-.u-pale-blue {
+.i-pale-blue {
   color: $black!important;
   background-color: $color_baby_blue_approx!important;
 }
-.u-text-amber {
+.i-text-amber {
   color: $color_amber_approx!important;
 }
-.u-text-aqua {
+.i-text-aqua {
   color: $cyan_aqua!important;
 }
-.u-text-blue {
+.i-text-blue {
   color: $color_dodger_blue_approx!important;
 }
-.u-text-light-blue {
+.i-text-light-blue {
   color: $color_seagull_approx!important;
 }
-.u-text-brown {
+.i-text-brown {
   color: $color_roman_coffee_approx!important;
 }
-.u-text-cyan {
+.i-text-cyan {
   color: $color_robins_egg_blue_approx!important;
 }
-.u-text-blue-grey {
+.i-text-blue-grey {
   color: $color_smalt_blue_approx!important;
 }
-.u-text-blue-gray {
+.i-text-blue-gray {
   color: $color_smalt_blue_approx!important;
 }
-.u-text-green {
+.i-text-green {
   color: $color_apple_approx!important;
 }
-.u-text-light-green {
+.i-text-light-green {
   color: $color_sushi_approx!important;
 }
-.u-text-indigo {
+.i-text-indigo {
   color: $color_cerulean_blue_approx!important;
 }
-.u-text-khaki {
+.i-text-khaki {
   color: $color_husk_approx!important;
 }
-.u-text-lime {
+.i-text-lime {
   color: $color_pear_approx!important;
 }
-.u-text-orange {
+.i-text-orange {
   color: $color_california_approx!important;
 }
-.u-text-deep-orange {
+.i-text-deep-orange {
   color: $color_flamingo_approx!important;
 }
-.u-text-pink {
+.i-text-pink {
   color: $color_razzmatazz_approx!important;
 }
-.u-text-purple {
+.i-text-purple {
   color: $color_violet_eggplant_approx!important;
 }
-.u-text-deep-purple {
+.i-text-deep-purple {
   color: $color_purple_heart_approx!important;
 }
-.u-text-red {
+.i-text-red {
   color: $color_red_orange_approx!important;
 }
-.u-text-sand {
+.i-text-sand {
   color: $old_lace!important;
 }
-.u-text-teal {
+.i-text-teal {
   color: $color_gossamer_approx!important;
 }
-.u-text-yellow {
+.i-text-yellow {
   color: $color_gold_tips_approx!important;
 }
-.u-text-white {
+.i-text-white {
   color: $white!important;
 }
-.u-text-black {
+.i-text-black {
   color: $black!important;
 }
-.u-text-grey {
+.i-text-grey {
   color: $color_tapa_approx!important;
 }
-.u-text-gray {
+.i-text-gray {
   color: $color_tapa_approx!important;
 }
-.u-text-light-grey {
+.i-text-light-grey {
   color: $seashell!important;
 }
-.u-text-light-gray {
+.i-text-light-gray {
   color: $seashell!important;
 }
-.u-text-dark-grey {
+.i-text-dark-grey {
   color: $color_masala_approx!important;
 }
-.u-text-dark-gray {
+.i-text-dark-gray {
   color: $color_masala_approx!important;
 }
-.u-border-amber {
+.i-border-amber {
   border-color: $color_amber_approx!important;
 }
-.u-border-aqua {
+.i-border-aqua {
   border-color: $cyan_aqua!important;
 }
-.u-border-blue {
+.i-border-blue {
   border-color: $color_dodger_blue_approx!important;
 }
-.u-border-light-blue {
+.i-border-light-blue {
   border-color: $color_seagull_approx!important;
 }
-.u-border-brown {
+.i-border-brown {
   border-color: $color_roman_coffee_approx!important;
 }
-.u-border-cyan {
+.i-border-cyan {
   border-color: $color_robins_egg_blue_approx!important;
 }
-.u-border-blue-grey {
+.i-border-blue-grey {
   border-color: $color_smalt_blue_approx!important;
 }
-.u-border-blue-gray {
+.i-border-blue-gray {
   border-color: $color_smalt_blue_approx!important;
 }
-.u-border-green {
+.i-border-green {
   border-color: $color_apple_approx!important;
 }
-.u-border-light-green {
+.i-border-light-green {
   border-color: $color_sushi_approx!important;
 }
-.u-border-indigo {
+.i-border-indigo {
   border-color: $color_cerulean_blue_approx!important;
 }
-.u-border-khaki {
+.i-border-khaki {
   border-color: $khaki!important;
 }
-.u-border-lime {
+.i-border-lime {
   border-color: $color_pear_approx!important;
 }
-.u-border-orange {
+.i-border-orange {
   border-color: $color_california_approx!important;
 }
-.u-border-deep-orange {
+.i-border-deep-orange {
   border-color: $color_flamingo_approx!important;
 }
-.u-border-pink {
+.i-border-pink {
   border-color: $color_razzmatazz_approx!important;
 }
-.u-border-purple {
+.i-border-purple {
   border-color: $color_violet_eggplant_approx!important;
 }
-.u-border-deep-purple {
+.i-border-deep-purple {
   border-color: $color_purple_heart_approx!important;
 }
-.u-border-red {
+.i-border-red {
   border-color: $color_red_orange_approx!important;
 }
-.u-border-sand {
+.i-border-sand {
   border-color: $old_lace!important;
 }
-.u-border-teal {
+.i-border-teal {
   border-color: $color_gossamer_approx!important;
 }
-.u-border-yellow {
+.i-border-yellow {
   border-color: $color_golden_fizz_approx!important;
 }
-.u-border-white {
+.i-border-white {
   border-color: $white!important;
 }
-.u-border-black {
+.i-border-black {
   border-color: $black!important;
 }
-.u-border-grey {
+.i-border-grey {
   border-color: $color_star_dust_approx!important;
 }
-.u-border-gray {
+.i-border-gray {
   border-color: $color_star_dust_approx!important;
 }
-.u-border-light-grey {
+.i-border-light-grey {
   border-color: $seashell!important;
 }
-.u-border-light-gray {
+.i-border-light-gray {
   border-color: $seashell!important;
 }
-.u-border-dark-grey {
+.i-border-dark-grey {
   border-color: $color_storm_dust_approx!important;
 }
-.u-border-dark-gray {
+.i-border-dark-gray {
   border-color: $color_storm_dust_approx!important;
 }
-.u-border-pale-red {
+.i-border-pale-red {
   border-color: $color_fair_pink_approx!important;
 }
-.u-border-pale-green {
+.i-border-pale-green {
   border-color: $color_hint_of_green_approx!important;
 }
-.u-border-pale-yellow {
+.i-border-pale-yellow {
   border-color: $color_cream_approx!important;
 }
-.u-border-pale-blue {
+.i-border-pale-blue {
   border-color: $color_tranquil_approx!important;
 }
 svg:not(:root) {
@@ -1819,16 +1819,16 @@ svg:not(:root) {
 [type=button]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-.u-bordered tr {
+.i-bordered tr {
   border-bottom: 1px solid $color_alto_approx;
 }
-.u-striped tbody tr:nth-child(even) {
+.i-striped tbody tr:nth-child(even) {
   background-color: $seashell;
 }
-.u-hoverable tbody tr:hover {
+.i-hoverable tbody tr:hover {
   background-color: $color_celeste_approx;
 }
-.u-centered tr {
+.i-centered tr {
   th {
     text-align: center;
   }
@@ -1839,355 +1839,355 @@ svg:not(:root) {
 :disabled * {
   pointer-events: none;
 }
-.u-hover-shadow:hover {
+.i-hover-shadow:hover {
   //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
   box-shadow: 0 4px 10px 0 $black_20, 0 4px 20px 0 $black_19;
 }
-.u-hover-opacity:hover {
+.i-hover-opacity:hover {
   opacity: 0.60;
 }
-.u-hover-opacity-off:hover {
+.i-hover-opacity-off:hover {
   opacity: 1;
 }
-.u-hover-greyscale:hover {
+.i-hover-greyscale:hover {
   filter: grayscale(100%);
 }
-.u-hover-grayscale:hover {
+.i-hover-grayscale:hover {
   filter: grayscale(100%);
 }
-.u-hover-sepia:hover {
+.i-hover-sepia:hover {
   filter: sepia(100%);
 }
-.u-hover-none:hover {
+.i-hover-none:hover {
   background-color: transparent!important;
   //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
   box-shadow: none!important;
 }
-.u-hover-amber:hover {
+.i-hover-amber:hover {
   color: $black!important;
   background-color: $color_amber_approx!important;
 }
-.u-hover-aqua:hover {
+.i-hover-aqua:hover {
   color: $black!important;
   background-color: $cyan_aqua!important;
 }
-.u-hover-blue:hover {
+.i-hover-blue:hover {
   color: $white!important;
   background-color: $color_dodger_blue_approx!important;
 }
-.u-hover-light-blue:hover {
+.i-hover-light-blue:hover {
   color: $black!important;
   background-color: $color_seagull_approx!important;
 }
-.u-hover-brown:hover {
+.i-hover-brown:hover {
   color: $white!important;
   background-color: $color_roman_coffee_approx!important;
 }
-.u-hover-cyan:hover {
+.i-hover-cyan:hover {
   color: $black!important;
   background-color: $color_robins_egg_blue_approx!important;
 }
-.u-hover-blue-grey:hover {
+.i-hover-blue-grey:hover {
   color: $white!important;
   background-color: $color_smalt_blue_approx!important;
 }
-.u-hover-blue-gray:hover {
+.i-hover-blue-gray:hover {
   color: $white!important;
   background-color: $color_smalt_blue_approx!important;
 }
-.u-hover-green:hover {
+.i-hover-green:hover {
   color: $white!important;
   background-color: $color_apple_approx!important;
 }
-.u-hover-light-green:hover {
+.i-hover-light-green:hover {
   color: $black!important;
   background-color: $color_sushi_approx!important;
 }
-.u-hover-indigo:hover {
+.i-hover-indigo:hover {
   color: $white!important;
   background-color: $color_cerulean_blue_approx!important;
 }
-.u-hover-khaki:hover {
+.i-hover-khaki:hover {
   color: $black!important;
   background-color: $khaki!important;
 }
-.u-hover-lime:hover {
+.i-hover-lime:hover {
   color: $black!important;
   background-color: $color_pear_approx!important;
 }
-.u-hover-orange:hover {
+.i-hover-orange:hover {
   color: $black!important;
   background-color: $color_california_approx!important;
 }
-.u-hover-deep-orange:hover {
+.i-hover-deep-orange:hover {
   color: $white!important;
   background-color: $color_flamingo_approx!important;
 }
-.u-hover-pink:hover {
+.i-hover-pink:hover {
   color: $white!important;
   background-color: $color_razzmatazz_approx!important;
 }
-.u-hover-purple:hover {
+.i-hover-purple:hover {
   color: $white!important;
   background-color: $color_violet_eggplant_approx!important;
 }
-.u-hover-deep-purple:hover {
+.i-hover-deep-purple:hover {
   color: $white!important;
   background-color: $color_purple_heart_approx!important;
 }
-.u-hover-red:hover {
+.i-hover-red:hover {
   color: $white!important;
   background-color: $color_red_orange_approx!important;
 }
-.u-hover-sand:hover {
+.i-hover-sand:hover {
   color: $black!important;
   background-color: $old_lace!important;
 }
-.u-hover-teal:hover {
+.i-hover-teal:hover {
   color: $white!important;
   background-color: $color_gossamer_approx!important;
 }
-.u-hover-yellow:hover {
+.i-hover-yellow:hover {
   color: $black!important;
   background-color: $color_golden_fizz_approx!important;
 }
-.u-hover-white:hover {
+.i-hover-white:hover {
   color: $black!important;
   background-color: $white!important;
 }
-.u-hover-black:hover {
+.i-hover-black:hover {
   color: $white!important;
   background-color: $black!important;
 }
-.u-hover-grey:hover {
+.i-hover-grey:hover {
   color: $black!important;
   background-color: $color_star_dust_approx!important;
 }
-.u-hover-gray:hover {
+.i-hover-gray:hover {
   color: $black!important;
   background-color: $color_star_dust_approx!important;
 }
-.u-hover-light-grey:hover {
+.i-hover-light-grey:hover {
   color: $black!important;
   background-color: $seashell!important;
 }
-.u-hover-light-gray:hover {
+.i-hover-light-gray:hover {
   color: $black!important;
   background-color: $seashell!important;
 }
-.u-hover-dark-grey:hover {
+.i-hover-dark-grey:hover {
   color: $white!important;
   background-color: $color_storm_dust_approx!important;
 }
-.u-hover-dark-gray:hover {
+.i-hover-dark-gray:hover {
   color: $white!important;
   background-color: $color_storm_dust_approx!important;
 }
-.u-hover-pale-red:hover {
+.i-hover-pale-red:hover {
   color: $black!important;
   background-color: $color_pippin_approx!important;
 }
-.u-hover-pale-green:hover {
+.i-hover-pale-green:hover {
   color: $black!important;
   background-color: $color_snowy_mint_approx!important;
 }
-.u-hover-pale-yellow:hover {
+.i-hover-pale-yellow:hover {
   color: $black!important;
   background-color: $color_cream_approx!important;
 }
-.u-hover-pale-blue:hover {
+.i-hover-pale-blue:hover {
   color: $black!important;
   background-color: $color_baby_blue_approx!important;
 }
-.u-hover-text-amber:hover {
+.i-hover-text-amber:hover {
   color: $color_amber_approx!important;
 }
-.u-hover-text-aqua:hover {
+.i-hover-text-aqua:hover {
   color: $cyan_aqua!important;
 }
-.u-hover-text-blue:hover {
+.i-hover-text-blue:hover {
   color: $color_dodger_blue_approx!important;
 }
-.u-hover-text-light-blue:hover {
+.i-hover-text-light-blue:hover {
   color: $color_seagull_approx!important;
 }
-.u-hover-text-brown:hover {
+.i-hover-text-brown:hover {
   color: $color_roman_coffee_approx!important;
 }
-.u-hover-text-cyan:hover {
+.i-hover-text-cyan:hover {
   color: $color_robins_egg_blue_approx!important;
 }
-.u-hover-text-blue-grey:hover {
+.i-hover-text-blue-grey:hover {
   color: $color_smalt_blue_approx!important;
 }
-.u-hover-text-blue-gray:hover {
+.i-hover-text-blue-gray:hover {
   color: $color_smalt_blue_approx!important;
 }
-.u-hover-text-green:hover {
+.i-hover-text-green:hover {
   color: $color_apple_approx!important;
 }
-.u-hover-text-light-green:hover {
+.i-hover-text-light-green:hover {
   color: $color_sushi_approx!important;
 }
-.u-hover-text-indigo:hover {
+.i-hover-text-indigo:hover {
   color: $color_cerulean_blue_approx!important;
 }
-.u-hover-text-khaki:hover {
+.i-hover-text-khaki:hover {
   color: $color_husk_approx!important;
 }
-.u-hover-text-lime:hover {
+.i-hover-text-lime:hover {
   color: $color_pear_approx!important;
 }
-.u-hover-text-orange:hover {
+.i-hover-text-orange:hover {
   color: $color_california_approx!important;
 }
-.u-hover-text-deep-orange:hover {
+.i-hover-text-deep-orange:hover {
   color: $color_flamingo_approx!important;
 }
-.u-hover-text-pink:hover {
+.i-hover-text-pink:hover {
   color: $color_razzmatazz_approx!important;
 }
-.u-hover-text-purple:hover {
+.i-hover-text-purple:hover {
   color: $color_violet_eggplant_approx!important;
 }
-.u-hover-text-deep-purple:hover {
+.i-hover-text-deep-purple:hover {
   color: $color_purple_heart_approx!important;
 }
-.u-hover-text-red:hover {
+.i-hover-text-red:hover {
   color: $color_red_orange_approx!important;
 }
-.u-hover-text-sand:hover {
+.i-hover-text-sand:hover {
   color: $old_lace!important;
 }
-.u-hover-text-teal:hover {
+.i-hover-text-teal:hover {
   color: $color_gossamer_approx!important;
 }
-.u-hover-text-yellow:hover {
+.i-hover-text-yellow:hover {
   color: $color_gold_tips_approx!important;
 }
-.u-hover-text-white:hover {
+.i-hover-text-white:hover {
   color: $white!important;
 }
-.u-hover-text-black:hover {
+.i-hover-text-black:hover {
   color: $black!important;
 }
-.u-hover-text-grey:hover {
+.i-hover-text-grey:hover {
   color: $color_tapa_approx!important;
 }
-.u-hover-text-gray:hover {
+.i-hover-text-gray:hover {
   color: $color_tapa_approx!important;
 }
-.u-hover-text-light-grey:hover {
+.i-hover-text-light-grey:hover {
   color: $seashell!important;
 }
-.u-hover-text-light-gray:hover {
+.i-hover-text-light-gray:hover {
   color: $seashell!important;
 }
-.u-hover-text-dark-grey:hover {
+.i-hover-text-dark-grey:hover {
   color: $color_masala_approx!important;
 }
-.u-hover-text-dark-gray:hover {
+.i-hover-text-dark-gray:hover {
   color: $color_masala_approx!important;
 }
-.u-hover-border-amber:hover {
+.i-hover-border-amber:hover {
   border-color: $color_amber_approx!important;
 }
-.u-hover-border-aqua:hover {
+.i-hover-border-aqua:hover {
   border-color: $cyan_aqua!important;
 }
-.u-hover-border-blue:hover {
+.i-hover-border-blue:hover {
   border-color: $color_dodger_blue_approx!important;
 }
-.u-hover-border-light-blue:hover {
+.i-hover-border-light-blue:hover {
   border-color: $color_seagull_approx!important;
 }
-.u-hover-border-brown:hover {
+.i-hover-border-brown:hover {
   border-color: $color_roman_coffee_approx!important;
 }
-.u-hover-border-cyan:hover {
+.i-hover-border-cyan:hover {
   border-color: $color_robins_egg_blue_approx!important;
 }
-.u-hover-border-blue-grey:hover {
+.i-hover-border-blue-grey:hover {
   border-color: $color_smalt_blue_approx!important;
 }
-.u-hover-border-blue-gray:hover {
+.i-hover-border-blue-gray:hover {
   border-color: $color_smalt_blue_approx!important;
 }
-.u-hover-border-green:hover {
+.i-hover-border-green:hover {
   border-color: $color_apple_approx!important;
 }
-.u-hover-border-light-green:hover {
+.i-hover-border-light-green:hover {
   border-color: $color_sushi_approx!important;
 }
-.u-hover-border-indigo:hover {
+.i-hover-border-indigo:hover {
   border-color: $color_cerulean_blue_approx!important;
 }
-.u-hover-border-khaki:hover {
+.i-hover-border-khaki:hover {
   border-color: $khaki!important;
 }
-.u-hover-border-lime:hover {
+.i-hover-border-lime:hover {
   border-color: $color_pear_approx!important;
 }
-.u-hover-border-orange:hover {
+.i-hover-border-orange:hover {
   border-color: $color_california_approx!important;
 }
-.u-hover-border-deep-orange:hover {
+.i-hover-border-deep-orange:hover {
   border-color: $color_flamingo_approx!important;
 }
-.u-hover-border-pink:hover {
+.i-hover-border-pink:hover {
   border-color: $color_razzmatazz_approx!important;
 }
-.u-hover-border-purple:hover {
+.i-hover-border-purple:hover {
   border-color: $color_violet_eggplant_approx!important;
 }
-.u-hover-border-deep-purple:hover {
+.i-hover-border-deep-purple:hover {
   border-color: $color_purple_heart_approx!important;
 }
-.u-hover-border-red:hover {
+.i-hover-border-red:hover {
   border-color: $color_red_orange_approx!important;
 }
-.u-hover-border-sand:hover {
+.i-hover-border-sand:hover {
   border-color: $old_lace!important;
 }
-.u-hover-border-teal:hover {
+.i-hover-border-teal:hover {
   border-color: $color_gossamer_approx!important;
 }
-.u-hover-border-yellow:hover {
+.i-hover-border-yellow:hover {
   border-color: $color_golden_fizz_approx!important;
 }
-.u-hover-border-white:hover {
+.i-hover-border-white:hover {
   border-color: $white!important;
 }
-.u-hover-border-black:hover {
+.i-hover-border-black:hover {
   border-color: $black!important;
 }
-.u-hover-border-grey:hover {
+.i-hover-border-grey:hover {
   border-color: $color_star_dust_approx!important;
 }
-.u-hover-border-gray:hover {
+.i-hover-border-gray:hover {
   border-color: $color_star_dust_approx!important;
 }
-.u-hover-border-light-grey:hover {
+.i-hover-border-light-grey:hover {
   border-color: $seashell!important;
 }
-.u-hover-border-light-gray:hover {
+.i-hover-border-light-gray:hover {
   border-color: $seashell!important;
 }
-.u-hover-border-dark-grey:hover {
+.i-hover-border-dark-grey:hover {
   border-color: $color_storm_dust_approx!important;
 }
-.u-hover-border-dark-gray:hover {
+.i-hover-border-dark-gray:hover {
   border-color: $color_storm_dust_approx!important;
 }
-.u-hover-border-pale-red:hover {
+.i-hover-border-pale-red:hover {
   border-color: $color_fair_pink_approx!important;
 }
-.u-hover-border-pale-green:hover {
+.i-hover-border-pale-green:hover {
   border-color: $color_hint_of_green_approx!important;
 }
-.u-hover-border-pale-yellow:hover {
+.i-hover-border-pale-yellow:hover {
   border-color: $color_cream_approx!important;
 }
-.u-hover-border-pale-blue:hover {
+.i-hover-border-pale-blue:hover {
   border-color: $color_tranquil_approx!important;
 }
