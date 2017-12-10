@@ -1,5 +1,9 @@
 const path = require('path');
-const ExtractTextPlugin
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+const extractSCSS = new ExtractTextPlugin({
+  filename: 
+})
 
 module.exports = {
   entry: './src/app.js',
@@ -19,5 +23,7 @@ module.exports = {
       }]
     }]
   },
-  plugins: []
+  plugins: [
+
+  ]
 };
