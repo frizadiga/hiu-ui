@@ -1,13 +1,23 @@
 const path = require('path');
+const ExtractTextPlugin
 
 module.exports = {
-  entry: './app.js',
+  entry: './src/app.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   module: {
-    rules: []
+    rules: [{
+      test: /\.scss$/,
+      use: [{
+        loader: "style-loader"
+      }, {
+        loader: "css-loader"
+      }, {
+        loader: "sass-loader"
+      }]
+    }]
   },
   plugins: []
 };
