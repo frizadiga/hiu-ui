@@ -4,6 +4,7 @@
   "description": "sleek & strong impression ui",
   "main": "./src/app.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

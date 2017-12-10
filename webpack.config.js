@@ -2,8 +2,7 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const extractSCSS = new ExtractTextPlugin({
-  filename: '.dist/css/[name].[contenthash].css',
-  disable: process.env.NODE_ENV === "development"
+  filename: '.dist/css/ikan.css',
 })
 
 module.exports = {
@@ -15,16 +14,17 @@ module.exports = {
   module: {
     rules: [{
       test: /\.scss$/,
-      use: [{
-        loader: "style-loader"
-      }, {
+      use: extractSCSS.extract({
+         use: [{
         loader: "css-loader"
       }, {
         loader: "sass-loader"
-      }]
+      }],
+      fallback: "style-loader"
+      })
     }]
   },
   plugins: [
-
+    extractSCSS
   ]
 };
