@@ -1,0 +1,1 @@
+const ikan = {return 'ikan instance'};
