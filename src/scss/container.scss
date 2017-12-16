@@ -1,0 +1,9 @@
+.i-container {
+  padding: 0.01em 16px;
+  &:after {
+    @extend %extend_11;
+  }
+  &:before {
+    @extend %extend_11;
+  }
+}
