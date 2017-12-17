@@ -48,6 +48,9 @@ $color_pale_red_border_hover: #ffe7e7;
 $color_pale_green_border_hover: #e7ffe7;
 $color_pale_blue_border_hover: #e7ffff;
 
+.i-transparent {
+  background-color: transparent!important;
+}
 .i-amber {
   color: $black!important;
   background-color: $color_amber!important;
