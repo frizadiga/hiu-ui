@@ -1,0 +1,67 @@
+.i-table {
+  @extend %extend_4;
+  td {
+    @extend %extend_5;
+    &:first-child {
+      padding-left: 16px;
+    }
+  }
+  th {
+    @extend %extend_5;
+    &:first-child {
+      padding-left: 16px;
+    }
+  }
+}
+
+.i-striped tbody tr:nth-child(even) {
+  background-color: $seashell;
+}
+
+.i-bordered tr {
+  border-bottom: 1px solid $color_alto_approx;
+}
+
+.i-centered tr {
+  th {
+    text-align: center;
+  }
+  td {
+    text-align: center;
+  }
+}
+
+.i-hoverable tbody tr:hover {
+  background-color: $color_celeste_approx;
+}
+
+.i-table-all {
+  @extend %extend_4;
+  border: 1px solid $color_celeste_approx;
+  tr {
+    border-bottom: 1px solid $color_alto_approx;
+    &:nth-child(odd) {
+      background-color: $white;
+    }
+    &:nth-child(even) {
+      background-color: $seashell;
+    }
+  }
+  td {
+    @extend %extend_5;
+    &:first-child {
+      padding-left: 16px;
+    }
+  }
+  th {
+    @extend %extend_5;
+    &:first-child {
+      padding-left: 16px;
+    }
+  }
+}
+
+.i-responsive {
+  display: block;
+  overflow-x: auto;
+}
