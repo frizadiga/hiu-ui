@@ -2,7 +2,7 @@
   "name": "ikan",
   "version": "0.1.0",
   "description": "sleek & strong impression ui",
-  "main": "./src/app.js",
+  "main": "./dist/js/ikan.js",
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack",
