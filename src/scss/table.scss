@@ -15,7 +15,7 @@
 }
 
 .i-striped tbody tr:nth-child(even) {
-  background-color: $seashell;
+  background-color: $color_light_grey;
 }
 
 .i-bordered tr {
@@ -44,7 +44,7 @@
       background-color: $white;
     }
     &:nth-child(even) {
-      background-color: $seashell;
+      background-color: $color_light_grey;
     }
   }
   td {
