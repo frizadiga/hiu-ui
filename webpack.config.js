@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const extractSCSS = new ExtractTextPlugin({
   filename: './css/ikan.css',
@@ -18,7 +19,12 @@ module.exports = {
     filename: './js/ikan.js'
   },
   devServer: {
-    contentBase: './dist'
+    port: 1717,
+    hot: true,
+    open: false,
+    openPage: '/',
+    contentBase: [path.join(__dirname)],
+    watchContentBase: true,
   },
   module: {
     rules: [
@@ -36,10 +42,18 @@ module.exports = {
           use: ['css-loader', 'sass-loader'],
         })
       },
+      {
+        test: /\.html$/,
+        loader: 'raw-loader',
+      },
 
     ]
   },
   plugins: [
-    extractSCSS
+    extractSCSS,
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      template: './examples/app.html'
+    })
   ]
 };
