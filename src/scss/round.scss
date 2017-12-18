@@ -1,0 +1,29 @@
+.i-circle {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 50%;
+}
+
+.i-round {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 4px;
+}
+.i-round-small {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 2px;
+}
+.i-round-medium {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 4px;
+}
+.i-round-large {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 8px;
+}
+.i-round-xlarge {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 16px;
+}
+.i-round-xxlarge {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 32px;
+}
