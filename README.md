@@ -1,2 +1,2 @@
 # ikan
-sleek &amp; strong impression ui
+Sleek &amp; Strong impression UI Framework inspired from the best on asteroids
