@@ -1,7 +1,5 @@
 const path = require('path');
-const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 
@@ -15,7 +13,9 @@ const extractSCSS = new ExtractTextPlugin({
 // });
 
 module.exports = {
-  entry: './src/app.js',
+  entry: {
+    app: './src/app.js',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: './js/ikan.js'
@@ -49,9 +49,5 @@ module.exports = {
   plugins: [
     extractSCSS,
     new CleanWebpackPlugin(['dist']),
-    new webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin({
-      template: './ex/app.html'
-    })
   ]
 };

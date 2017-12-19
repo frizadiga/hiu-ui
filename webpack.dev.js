@@ -1,4 +1,6 @@
 const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
@@ -12,5 +14,8 @@ module.exports = merge(common, {
     contentBase: [path.join(__dirname)],
     watchContentBase: true,
   },
-
+  new webpack.HotModuleReplacementPlugin(),
+  new HtmlWebpackPlugin({
+    template: './ex/app.html'
+  })
 });
