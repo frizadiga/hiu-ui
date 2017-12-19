@@ -1,5 +1,5 @@
 // require('./js/app.js');
 require('./scss/app.scss');
-require('../examples/app.html');
+require('../ex/app.html');
 const i = require('./js/app.js');
 i('0.0.2');
