@@ -284,7 +284,7 @@ sup {
 }
 img {
   border-style: none;
-  margin-bottom: -5px;
+  vertical-align: middle;
 }
 code {
   font-family: $font_0, $font_0;
@@ -1207,9 +1207,9 @@ h6 {
   box-shadow: 0 4px 10px 0 $black_20, 0 4px 20px 0 $black_19;
 }
 .i-spin {
-  animation: u-spin 2s infinite linear;
+  animation: i-spin 2s infinite linear;
 }
-@keyframes u-spin {
+@keyframes i-spin {
   0% {
     //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
     transform: rotate(0deg);
