@@ -1,0 +1,21 @@
+.i-modal {
+  z-index: 3;
+  display: none;
+  padding-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: $black;
+  background-color: $black_40;
+}
+.i-modal-content {
+  margin: auto;
+  background-color: $white;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  width: 600px;
+}
