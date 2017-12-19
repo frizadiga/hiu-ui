@@ -7,7 +7,6 @@
     "dev": "webpack-dev-server --config webpack.dev.js",
     "watch": "webpack --progress --watch",
     "build": "webpack --config webpack.prod.js",
-    "prod": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
