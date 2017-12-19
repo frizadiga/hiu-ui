@@ -30,13 +30,14 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        include: path.resolve(__dirname, 'src', 'js'),
         use: {
           loader:'babel-loader',
         },
       },
       {
         test: /\.scss$/,
+        include: path.resolve(__dirname, 'src', 'scss'),
         use: extractSCSS.extract({
           fallback: 'style-loader',
           use: ['css-loader', 'sass-loader'],
@@ -44,6 +45,7 @@ module.exports = {
       },
       {
         test: /\.html$/,
+        include: path.resolve(__dirname, 'examples'),
         loader: 'raw-loader',
       },
 
