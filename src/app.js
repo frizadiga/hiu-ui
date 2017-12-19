@@ -1,5 +1,5 @@
 // require('./js/app.js');
-require('./scss/app.scss');
+import './scss/app.scss';
 
 (process.env.NODE_ENV !== 'production')?require('../ex/app.html'):null;
 

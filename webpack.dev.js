@@ -14,8 +14,10 @@ module.exports = merge(common, {
     contentBase: [path.join(__dirname)],
     watchContentBase: true,
   },
-  new webpack.HotModuleReplacementPlugin(),
-  new HtmlWebpackPlugin({
-    template: './ex/app.html'
-  })
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      template: './ex/app.html'
+    })
+  ]
 });
