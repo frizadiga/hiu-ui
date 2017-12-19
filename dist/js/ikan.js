@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2de6c58837123768d9cb"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "0accf5b15acf60ca417c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -745,7 +745,7 @@ i('0.0.2');
 /* 2 */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <title>Examples - ikan</title>\r\n  <link rel=\"stylesheet\" href=\"../dist/css/ikan.css\">\r\n</head>\r\n<body>\r\n  <div class=\"i-card i-container i-padding-16 i-blue-grey i-large\">\r\n    <b>ikan</b> UI framework\r\n  </div>\r\n  <!-- <script src=\"../dist/app.bundle.js\"></script> -->\r\n  <script src=\"../dist/js/ikan.js\"></script>\r\n</body>\r\n</html>"
+module.exports = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <title>Examples - ikan</title>\r\n  <link rel=\"stylesheet\" href=\"../dist/css/ikan.css\">\r\n</head>\r\n<body>\r\n  <div class=\"i-card i-center i-container i-padding-16 i-blue-grey i-large\">\r\n    <b>ikan</b> UI framework\r\n  </div>\r\n  <!-- <script src=\"../dist/app.bundle.js\"></script> -->\r\n  <script src=\"../dist/js/ikan.js\"></script>\r\n</body>\r\n</html>"
 
 /***/ }),
 /* 3 */
