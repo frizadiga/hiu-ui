@@ -340,59 +340,6 @@ $color_pale_blue_border_hover: #e7ffff;
 .i-border-pale-blue {
   border-color: $color_pale_blue_border_hover!important;
 }
-svg:not(:root) {
-  overflow: hidden;
-}
-[type=reset]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-[type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-[type=button]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-.i-bordered tr {
-  border-bottom: 1px solid $color_alto_approx;
-}
-.i-striped tbody tr:nth-child(even) {
-  background-color: $color_light_grey;
-}
-.i-hoverable tbody tr:hover {
-  background-color: $color_celeste_approx;
-}
-.i-centered tr {
-  th {
-    text-align: center;
-  }
-  td {
-    text-align: center;
-  }
-}
-:disabled * {
-  pointer-events: none;
-}
-.i-hover-shadow:hover {
-  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-  box-shadow: 0 4px 10px 0 $black_20, 0 4px 20px 0 $black_19;
-}
-.i-hover-opacity:hover {
-  opacity: 0.60;
-}
-.i-hover-opacity-off:hover {
-  opacity: 1;
-}
-.i-hover-greyscale:hover {
-  filter: grayscale(100%);
-}
-.i-hover-sepia:hover {
-  filter: sepia(100%);
-}
-.i-hover-none:hover {
-  background-color: transparent!important;
-  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-  box-shadow: none!important;
-}
 .i-hover-amber:hover {
   color: $black!important;
   background-color: $color_amber!important;
