@@ -1,7 +1,7 @@
 // require('./js/app.js');
 import './scss/app.scss';
 
-(process.env.NODE_ENV !== 'production')?require('../ex/app.html'):null;
+(process.env.NODE_ENV !== 'production')?require('./html/app.html'):null;
 
 if (process.env.NODE_ENV !== 'production') {
   console.log('NODE_ENV: Development mode!');
