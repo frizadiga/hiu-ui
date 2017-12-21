@@ -8,97 +8,102 @@
     .sub-title{
       margin: 0;
       padding-left: 16px;
+      font-size: 22px;
     }
-    #sidenav{
+    #top-bar{
+      margin-left: 250px;
+    }
+    #side-bar{
       width: 250px;
       padding: 8px 0 8px 0;
     }
   </style>
+  <link rel="icon" type="image/png" href="./assets/favicon-32x32.png">
 </head>
 <body>
-  <!-- <div class="i-center i-padding i-text-blue-grey"> <b>| test HMR |</b> </div> -->
-  <div id="main">
-    <nav class="i-card i-center i-container i-padding-16 i-blue-grey">
-      <b>ikan</b> - Composable & Strong Impression UI framework
-    </nav>
-
-    <nav class="i-sidebar i-card i-bar-block i-collapse i-light-grey" id="sidenav">
-      <!-- <a href="javascript:void(0)" onclick="close_menu()" class="i-button i-hide-large i-large i-display-topright" style="right:16px;padding:3px 12px;font-weight:bold;">×</a> -->
-      <h3 class="sub-title">ikan UI Framework</h3>
-      <a class="i-bar-item i-button" target="_top" href="default">ikan Home</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_intro">ikan Intro</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_colors">ikan Colors</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_containers">ikan Containers</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_panels">ikan Panels</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_borders">ikan Borders</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_cards">ikan Cards</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_fonts">ikan Fonts</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_text">ikan Text</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_round">ikan Round</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_padding">ikan Padding</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_margins">ikan Margins</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_display">ikan Display</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_buttons">ikan Buttons</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_notes">ikan Notes</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_quotes">ikan Quotes</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_alerts">ikan Alerts</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_tables">ikan Tables</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_lists">ikan Lists</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_images">ikan Images</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_input">ikan Inputs</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_badges">ikan Badges</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_tags">ikan Tags</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_icons">ikan Icons</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_responsive">ikan Responsive</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_layout">ikan Layout</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_animate">ikan Animations</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_effects">ikan Effects</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_bars">ikan Bars</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_dropdowns">ikan Dropdowns</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_accordions">ikan Accordions</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_navigation">ikan Navigation</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_sidebar">ikan Sidebar</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_tabulators">ikan Tabs</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_pagination">ikan Pagination</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_progressbar">ikan Progress Bars</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_slideshow">ikan Slideshow</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_modal">ikan Modal</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_tooltips">ikan Tooltips</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_grid">ikan Grid</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_code">ikan Code</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_filters">ikan Filters</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_trends">ikan Trends</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_case">ikan Case</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_material">ikan Material</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_validation">ikan Validation</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_versions">ikan Versions</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_pro">ikan Pro</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_mobile">ikan Mobile</a>
+  <!-- SIDE NAVBAR -->
+    <nav class="i-sidebar i-card i-bar-block i-collapse i-light-grey" id="side-bar">
+      <a href="javascript:void(0)" onclick="close_menu()" class="i-button i-hide-large i-large i-display-topright" style="right:16px;padding:3px 12px;font-weight:bold;">×</a>
+      <h3 class="sub-title">Components</h3>
+      <a class="i-bar-item i-button" target="_top" href="default.html">ikan Home</a>
+      <a class="i-bar-item i-button" target="_top" href="intro.html">ikan Intro</a>
+      <a class="i-bar-item i-button" target="_top" href="color.html">ikan Colors</a>
+      <a class="i-bar-item i-button" target="_top" href="container.html">ikan Containers</a>
+      <a class="i-bar-item i-button" target="_top" href="panel.html">ikan Panels</a>
+      <a class="i-bar-item i-button" target="_top" href="border.html">ikan Borders</a>
+      <a class="i-bar-item i-button" target="_top" href="card.html">ikan Cards</a>
+      <a class="i-bar-item i-button" target="_top" href="fonts.html">ikan Fonts</a>
+      <a class="i-bar-item i-button" target="_top" href="text.html">ikan Text</a>
+      <a class="i-bar-item i-button" target="_top" href="round.html">ikan Round</a>
+      <a class="i-bar-item i-button" target="_top" href="padding.html">ikan Padding</a>
+      <a class="i-bar-item i-button" target="_top" href="margin.html">ikan Margins</a>
+      <a class="i-bar-item i-button" target="_top" href="display.html">ikan Display</a>
+      <a class="i-bar-item i-button" target="_top" href="button.html">ikan Buttons</a>
+      <a class="i-bar-item i-button" target="_top" href="note.html">ikan Notes</a>
+      <a class="i-bar-item i-button" target="_top" href="quote.html">ikan Quotes</a>
+      <a class="i-bar-item i-button" target="_top" href="alert.html">ikan Alerts</a>
+      <a class="i-bar-item i-button" target="_top" href="table.html">ikan Tables</a>
+      <a class="i-bar-item i-button" target="_top" href="list.html">ikan Lists</a>
+      <a class="i-bar-item i-button" target="_top" href="images.html">ikan Images</a>
+      <a class="i-bar-item i-button" target="_top" href="input.html">ikan Inputs</a>
+      <a class="i-bar-item i-button" target="_top" href="badge.html">ikan Badges</a>
+      <a class="i-bar-item i-button" target="_top" href="tag.html">ikan Tags</a>
+      <a class="i-bar-item i-button" target="_top" href="icon.html">ikan Icons</a>
+      <a class="i-bar-item i-button" target="_top" href="responsive.html">ikan Responsive</a>
+      <a class="i-bar-item i-button" target="_top" href="layout.html">ikan Layout</a>
+      <a class="i-bar-item i-button" target="_top" href="animate.html">ikan Animations</a>
+      <a class="i-bar-item i-button" target="_top" href="effect.html">ikan Effects</a>
+      <a class="i-bar-item i-button" target="_top" href="bar.html">ikan Bars</a>
+      <a class="i-bar-item i-button" target="_top" href="dropdown.html">ikan Dropdowns</a>
+      <a class="i-bar-item i-button" target="_top" href="accordion.html">ikan Accordions</a>
+      <a class="i-bar-item i-button" target="_top" href="navigation.html">ikan Navigation</a>
+      <a class="i-bar-item i-button" target="_top" href="sidebar.html">ikan Sidebar</a>
+      <a class="i-bar-item i-button" target="_top" href="tab.html">ikan Tabs</a>
+      <a class="i-bar-item i-button" target="_top" href="pagination.html">ikan Pagination</a>
+      <a class="i-bar-item i-button" target="_top" href="progressbar.html">ikan Progress Bars</a>
+      <a class="i-bar-item i-button" target="_top" href="slideshow.html">ikan Slideshow</a>
+      <a class="i-bar-item i-button" target="_top" href="modal.html">ikan Modal</a>
+      <a class="i-bar-item i-button" target="_top" href="tooltip.html">ikan Tooltips</a>
+      <a class="i-bar-item i-button" target="_top" href="grid.html">ikan Grid</a>
+      <a class="i-bar-item i-button" target="_top" href="code.html">ikan Code</a>
+      <a class="i-bar-item i-button" target="_top" href="filter.html">ikan Filters</a>
+      <a class="i-bar-item i-button" target="_top" href="trend.html">ikan Trends</a>
+      <a class="i-bar-item i-button" target="_top" href="case.html">ikan Case</a>
+      <a class="i-bar-item i-button" target="_top" href="material.html">ikan Material</a>
+      <a class="i-bar-item i-button" target="_top" href="validation.html">ikan Validation</a>
+      <a class="i-bar-item i-button" target="_top" href="version.html">ikan Versions</a>
+      <a class="i-bar-item i-button" target="_top" href="pro.html">ikan Pro</a>
+      <a class="i-bar-item i-button" target="_top" href="mobile.html">ikan Mobile</a>
       <br>
       <h3 class="sub-title">ikan Colors</h3>
-      <a class="i-bar-item i-button" target="_top" href="ikan_color_classes">ikan Color Classes</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_color_material">ikan Color Material</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_color_flat">ikan Color Flat UI</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_color_metro">ikan Color Metro UI</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_color_win8">ikan Color Win8</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_color_libraries">ikan Color Libraries</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_color_schemes">ikan Color Schemes</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_color_themes">ikan Color Themes</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_color_generator">ikan Color Generator</a>
+      <a class="i-bar-item i-button" target="_top" href="color_classes.html">ikan Color Classes</a>
+      <a class="i-bar-item i-button" target="_top" href="color_material.html">ikan Color Material</a>
+      <a class="i-bar-item i-button" target="_top" href="color_flat.html">ikan Color Flat UI</a>
+      <a class="i-bar-item i-button" target="_top" href="color_metro.html">ikan Color Metro UI</a>
+      <a class="i-bar-item i-button" target="_top" href="color_libraries.html">ikan Color Libraries</a>
+      <a class="i-bar-item i-button" target="_top" href="color_schemes.html">ikan Color Schemes</a>
+      <a class="i-bar-item i-button" target="_top" href="color_themes.html">ikan Color Themes</a>
+      <a class="i-bar-item i-button" target="_top" href="color_generator.html">ikan Color Generator</a>
       <br>
       <h3 class="sub-title">Examples</h3>
-      <a class="i-bar-item i-button" target="_top" href="ikan_examples">ikan Examples</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_demo">ikan Demos</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_templates">ikan Templates</a>
+      <a class="i-bar-item i-button" target="_top" href="examples.html">ikan Examples</a>
+      <a class="i-bar-item i-button" target="_top" href="demo.html">ikan Demos</a>
+      <a class="i-bar-item i-button" target="_top" href="templates.html">ikan Templates</a>
       <br>
       <h3 class="sub-title">References</h3>
-      <a class="i-bar-item i-button" target="_top" href="ikan_references" class="active">ikan References</a>
-      <a class="i-bar-item i-button" target="_top" href="ikan_downloads">ikan Downloads</a>
+      <a class="i-bar-item i-button" target="_top" href="references" class="active">ikan References</a>
+      <a class="i-bar-item i-button" target="_top" href="downloads.html">ikan Downloads</a>
 
 
       <br><br>
       <br><br>
-  </nav>
+    </nav>
+
+  <!-- <div class="i-center i-padding i-text-blue-grey"> <b>| test HMR |</b> </div> -->
+  <div id="main">
+    <nav class="i-card i-center i-container i-padding-16 i-blue-grey" id="top-bar">
+      <b>ikan</b> - Composable & Strong Impression UI framework
+    </nav>
 </div>
   <script src="../../dist/js/ikan.js"></script>
 </body>
