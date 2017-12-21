@@ -8,11 +8,11 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   devServer: {
     port: 1717,
-    hot: true,
+    hot: false,
     open: false,
     openPage: '/',
-    contentBase: [path.join(__dirname)],
-    watchContentBase: true,
+    contentBase: [path.join(__dirname),],
+    watchContentBase: false,
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
