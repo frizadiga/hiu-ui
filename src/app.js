@@ -1,7 +1,7 @@
 // require('./js/app.js');
 import './scss/app.scss';
 
-(process.env.NODE_ENV !== 'production')?require('./html/app.html'):null;
+// (process.env.NODE_ENV !== 'production')?require('./html/wrapper/app.html'):null;
 
 if (process.env.NODE_ENV !== 'production') {
   console.log('NODE_ENV: Development mode!');
@@ -11,4 +11,4 @@ if (process.env.NODE_ENV !== 'production') {
 
 console.log(`test Webpack Hot Module Reload`);
 const i = require('./js/app.js');
-i('0.0.2');
+i('0.2.0');

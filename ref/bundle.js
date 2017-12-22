@@ -1,63 +1,63 @@
 "use strict";
-var I = {};
-I.hide = function (sel) {
-  I.hideElements(I.getElements(sel));
+var ikan = {};
+ikan.hide = function (sel) {
+  ikan.hideElements(ikan.getElements(sel));
 };
-I.hideElements = function (elements) {
+ikan.hideElements = function (elements) {
   var i, l = elements.length;
   for (i = 0; i < l; i++) {
-    I.hideElement(elements[i]);
+    ikan.hideElement(elements[i]);
   }
 };
-I.hideElement = function (element) {
-  I.styleElement(element, "display", "none");
+ikan.hideElement = function (element) {
+  ikan.styleElement(element, "display", "none");
 };
-I.show = function (sel, a) {
-  var elements = I.getElements(sel);
-  if (a) {I.hideElements(elements);}
-  I.showElements(elements);
+ikan.show = function (sel, a) {
+  var elements = ikan.getElements(sel);
+  if (a) {ikan.hideElements(elements);}
+  ikan.showElements(elements);
 };
-I.showElements = function (elements) {
+ikan.showElements = function (elements) {
   var i, l = elements.length;
   for (i = 0; i < l; i++) {
-    I.showElement(elements[i]);
+    ikan.showElement(elements[i]);
   }
 };
-I.showElement = function (element) {
-  I.styleElement(element, "display", "block");
+ikan.showElement = function (element) {
+  ikan.styleElement(element, "display", "block");
 };
-I.addStyle = function (sel, prop, val) {
-  I.styleElements(I.getElements(sel), prop, val);
+ikan.addStyle = function (sel, prop, val) {
+  ikan.styleElements(ikan.getElements(sel), prop, val);
 };
-I.styleElements = function (elements, prop, val) {
+ikan.styleElements = function (elements, prop, val) {
   var i, l = elements.length;
   for (i = 0; i < l; i++) {    
-    I.styleElement(elements[i], prop, val);
+    ikan.styleElement(elements[i], prop, val);
   }
 };
-I.styleElement = function (element, prop, val) {
+ikan.styleElement = function (element, prop, val) {
   element.style.setProperty(prop, val);
 };
-I.toggleShow = function (sel) {
-  var i, x = I.getElements(sel), l = x.length;
+ikan.toggleShow = function (sel) {
+  var i, x = ikan.getElements(sel), l = x.length;
   for (i = 0; i < l; i++) {    
     if (x[i].style.display == "none") {
-      I.styleElement(x[i], "display", "block");
+      ikan.styleElement(x[i], "display", "block");
     } else {
-      I.styleElement(x[i], "display", "none");
+      ikan.styleElement(x[i], "display", "none");
     }
   }
 };
-I.addClass = function (sel, name) {
-  I.addClassElements(I.getElements(sel), name);
+ikan.addClass = function (sel, name) {
+  ikan.addClassElements(ikan.getElements(sel), name);
 };
-I.addClassElements = function (elements, name) {
+ikan.addClassElements = function (elements, name) {
   var i, l = elements.length;
   for (i = 0; i < l; i++) {
-    I.addClassElement(elements[i], name);
+    ikan.addClassElement(elements[i], name);
   }
 };
-I.addClassElement = function (element, name) {
+ikan.addClassElement = function (element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -65,16 +65,16 @@ I.addClassElement = function (element, name) {
     if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
   }
 };
-I.removeClass = function (sel, name) {
-  I.removeClassElements(I.getElements(sel), name);
+ikan.removeClass = function (sel, name) {
+  ikan.removeClassElements(ikan.getElements(sel), name);
 };
-I.removeClassElements = function (elements, name) {
+ikan.removeClassElements = function (elements, name) {
   var i, l = elements.length, arr1, arr2, j;
   for (i = 0; i < l; i++) {
-    I.removeClassElement(elements[i], name);
+    ikan.removeClassElement(elements[i], name);
   }
 };
-I.removeClassElement = function (element, name) {
+ikan.removeClassElement = function (element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -85,16 +85,16 @@ I.removeClassElement = function (element, name) {
   }
   element.className = arr1.join(" ");
 };
-I.toggleClass = function (sel, c1, c2) {
-  I.toggleClassElements(I.getElements(sel), c1, c2);
+ikan.toggleClass = function (sel, c1, c2) {
+  ikan.toggleClassElements(ikan.getElements(sel), c1, c2);
 };
-I.toggleClassElements = function (elements, c1, c2) {
+ikan.toggleClassElements = function (elements, c1, c2) {
   var i, l = elements.length;
   for (i = 0; i < l; i++) {    
-    I.toggleClassElement(elements[i], c1, c2);
+    ikan.toggleClassElement(elements[i], c1, c2);
   }
 };
-I.toggleClassElement = function (element, c1, c2) {
+ikan.toggleClassElement = function (element, c1, c2) {
   var t1, t2, t1Arr, t2Arr, j, arr, allPresent;
   t1 = (c1 || "");
   t2 = (c2 || "");
@@ -107,9 +107,9 @@ I.toggleClassElement = function (element, c1, c2) {
       if (arr.indexOf(t1Arr[j]) == -1) {allPresent = false;}
     }
     if (allPresent) {
-      I.removeClassElement(element, t1);
+      ikan.removeClassElement(element, t1);
     } else {
-      I.addClassElement(element, t1);
+      ikan.addClassElement(element, t1);
     }
   } else {
     allPresent = true;
@@ -117,26 +117,26 @@ I.toggleClassElement = function (element, c1, c2) {
       if (arr.indexOf(t1Arr[j]) == -1) {allPresent = false;}
     }
     if (allPresent) {
-      I.removeClassElement(element, t1);
-      I.addClassElement(element, t2);          
+      ikan.removeClassElement(element, t1);
+      ikan.addClassElement(element, t2);          
     } else {
-      I.removeClassElement(element, t2);        
-      I.addClassElement(element, t1);
+      ikan.removeClassElement(element, t2);        
+      ikan.addClassElement(element, t1);
     }
   }
 };
-I.getElements = function (id) {
+ikan.getElements = function (id) {
   if (typeof id == "object") {
     return [id];
   } else {
     return document.querySelectorAll(id);
   }
 };
-I.filterHTML = function(id, sel, filter) {
+ikan.filterHTML = function(id, sel, filter) {
   var a, b, c, i, ii, iii, hit;
-  a = I.getElements(id);
+  a = ikan.getElements(id);
   for (i = 0; i < a.length; i++) {
-    b = I.getElements(sel);
+    b = ikan.getElements(sel);
     for (ii = 0; ii < b.length; ii++) {
       hit = 0;
       if (b[ii].innerHTML.toUpperCase().indexOf(filter.toUpperCase()) > -1) {
@@ -156,9 +156,9 @@ I.filterHTML = function(id, sel, filter) {
     }
   }
 };
-I.sortHTML = function(id, sel, sortvalue) {
+ikan.sortHTML = function(id, sel, sortvalue) {
   var a, b, i, ii, y, bytt, v1, v2, cc, j;
-  a = I.getElements(id);
+  a = ikan.getElements(id);
   for (i = 0; i < a.length; i++) {
     for (j = 0; j < 2; j++) {
       cc = 0;
@@ -190,8 +190,8 @@ I.sortHTML = function(id, sel, sortvalue) {
     }
   }
 };
-I.slideshow = function (sel, ms, func) {
-  var i, ss, x = I.getElements(sel), l = x.length;
+ikan.slideshow = function (sel, ms, func) {
+  var i, ss, x = ikan.getElements(sel), l = x.length;
   ss = {};
   ss.current = 1;
   ss.x = x;
@@ -220,26 +220,26 @@ I.slideshow = function (sel, ms, func) {
     ss.start();
   };
   ss.display = function (n) {
-    I.styleElements(ss.x, "display", "none");
-    I.styleElement(ss.x[n - 1], "display", "block");
+    ikan.styleElements(ss.x, "display", "none");
+    ikan.styleElement(ss.x[n - 1], "display", "block");
   }
   ss.start();
   return ss;
 };
-I.includeHTML = function(cb) {
+ikan.includeHTML = function(cb) {
   var z, i, elmnt, file, xhttp;
   z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {
     elmnt = z[i];
-    file = elmnt.getAttribute("I-include-html");
+    file = elmnt.getAttribute("ikan-include-html");
     if (file) {
       xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4) {
           if (this.status == 200) {elmnt.innerHTML = this.responseText;}
           if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          elmnt.removeAttribute("I-include-html");
-          I.includeHTML(cb);
+          elmnt.removeAttribute("ikan-include-html");
+          ikan.includeHTML(cb);
         }
       }      
       xhttp.open("GET", file, true);
@@ -249,28 +249,28 @@ I.includeHTML = function(cb) {
   }
   if (cb) cb();
 };
-I.getHttpData = function (file, func) {
-  I.http(file, function () {
+ikan.getHttpData = function (file, func) {
+  ikan.http(file, function () {
     if (this.readyState == 4 && this.status == 200) {
       func(this.responseText);
     }
   });
 };
-I.getHttpObject = function (file, func) {
-  I.http(file, function () {
+ikan.getHttpObject = function (file, func) {
+  ikan.http(file, function () {
     if (this.readyState == 4 && this.status == 200) {
       func(JSON.parse(this.responseText));
     }
   });
 };
-I.displayHttp = function (id, file) {
-  I.http(file, function () {
+ikan.displayHttp = function (id, file) {
+  ikan.http(file, function () {
     if (this.readyState == 4 && this.status == 200) {
-      I.displayObject(id, JSON.parse(this.responseText));
+      ikan.displayObject(id, JSON.parse(this.responseText));
     }
   });
 };
-I.http = function (target, readyfunc, xml, method) {
+ikan.http = function (target, readyfunc, xml, method) {
   var httpObj;
   if (!method) {method = "GET"; }
   if (window.XMLHttpRequest) {
@@ -284,7 +284,7 @@ I.http = function (target, readyfunc, xml, method) {
     httpObj.send(xml);
   }
 };
-I.getElementsByAttribute = function (x, att) {
+ikan.getElementsByAttribute = function (x, att) {
   var arr = [], arrCount = -1, i, l, y = x.getElementsByTagName("*"), z = att.toUpperCase();
   l = y.length;
   for (i = -1; i < l; i += 1) {
@@ -293,51 +293,51 @@ I.getElementsByAttribute = function (x, att) {
   }
   return arr;
 };  
-I.dataObject = {},
-I.displayObject = function (id, data) {
+ikan.dataObject = {},
+ikan.displayObject = function (id, data) {
   var htmlObj, htmlTemplate, html, arr = [], a, l, rowClone, x, j, i, ii, cc, repeat, repeatObj, repeatX = "";
-  htmlObj = document.getElementById(id);
+  htmlObj = document.getElementByikand(id);
   htmlTemplate = init_template(id, htmlObj);
   html = htmlTemplate.cloneNode(true);
-  arr = I.getElementsByAttribute(html, "I-repeat");
+  arr = ikan.getElementsByAttribute(html, "ikan-repeat");
   l = arr.length;
   for (j = (l - 1); j >= 0; j -= 1) {
-    cc = arr[j].getAttribute("I-repeat").split(" ");
+    cc = arr[j].getAttribute("ikan-repeat").split(" ");
     if (cc.length == 1) {
       repeat = cc[0];
     } else {
       repeatX = cc[0];
       repeat = cc[2];
     }
-    arr[j].removeAttribute("I-repeat");
+    arr[j].removeAttribute("ikan-repeat");
     repeatObj = data[repeat];
     if (repeatObj && typeof repeatObj == "object" && repeatObj.length != "undefined") {
       i = 0;
       for (x in repeatObj) {
         i += 1;
         rowClone = arr[j];
-        rowClone = I_replace_curly(rowClone, "element", repeatX, repeatObj[x]);
+        rowClone = ikan_replace_curly(rowClone, "element", repeatX, repeatObj[x]);
         a = rowClone.attributes;
         for (ii = 0; ii < a.length; ii += 1) {
-          a[ii].value = I_replace_curly(a[ii], "attribute", repeatX, repeatObj[x]).value;
+          a[ii].value = ikan_replace_curly(a[ii], "attribute", repeatX, repeatObj[x]).value;
         }
         (i === repeatObj.length) ? arr[j].parentNode.replaceChild(rowClone, arr[j]) : arr[j].parentNode.insertBefore(rowClone, arr[j]);
       }
     } else {
-      console.log("I-repeat must be an array. " + repeat + " is not an array.");
+      console.log("ikan-repeat must be an array. " + repeat + " is not an array.");
       continue;
     }
   }
-  html = I_replace_curly(html, "element");
+  html = ikan_replace_curly(html, "element");
   htmlObj.parentNode.replaceChild(html, htmlObj);
   function init_template(id, obj) {
     var template;
     template = obj.cloneNode(true);
-    if (I.dataObject.hasOwnProperty(id)) {return I.dataObject[id];}
-    I.dataObject[id] = template;
+    if (ikan.dataObject.hasOwnProperty(id)) {return ikan.dataObject[id];}
+    ikan.dataObject[id] = template;
     return template;
   }
-  function I_replace_curly(elmnt, typ, repeatX, x) {
+  function ikan_replace_curly(elmnt, typ, repeatX, x) {
     var value, rowClone, pos1, pos2, originalHTML, lookFor, lookForARR = [], i, cc, r;
     rowClone = elmnt.cloneNode(true);
     pos1 = 0;
@@ -374,14 +374,14 @@ I.displayObject = function (id, data) {
         if (typ == "attribute") {
           rowClone.value = rowClone.value.replace(r, value);
         } else {
-          I_replace_html(rowClone, r, value);
+          ikan_replace_html(rowClone, r, value);
         }
       }
       pos1 = pos1 + 1;
     }
     return rowClone;
   }
-  function I_replace_html(a, r, result) {
+  function ikan_replace_html(a, r, result) {
     var b, l, i, a, x, j;
     if (a.hasAttributes()) {
       b = a.attributes;

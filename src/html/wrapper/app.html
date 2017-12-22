@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Examples - ikan</title>
+  <link rel="stylesheet" href="../../../dist/css/ikan.css">
+  <style>
+    .sub-title{
+      margin: 0;
+      padding-left: 16px;
+      font-size: 22px;
+    }
+    #top-bar{
+      margin-left: 250px;
+    }
+    #side-bar{
+      width: 250px;
+      padding: 8px 0 8px 0;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="./favicon-32x32.png">
+</head>
+<body>
+  <!-- <script src="../../ref/bundle.js"></script> -->
+  <script src="./html.js"></script>
+
+  <!-- SIDE NAVBAR -->
+  <div ikan-include-html="./sidebar.html"></div>
+  
+  <!-- TEST LIVE RELOAD -->
+  <div class="i-center i-padding i-white" style="margin-left: 250px;">
+    <b class="i-text-blue-grey">| test live reload |</b> 
+  </div>
+
+  <div id="main">
+    <nav class="i-card i-center i-container i-padding-16 i-blue-grey" id="top-bar">
+      <b>ikan</b> - Composable & Strong Impression UI framework
+    </nav>
+</div>
+  <script src="../../../dist/js/ikan.js"></script>
+  <script>
+    ikan.includeHTML();
+  </script>
+</body>
+</html>

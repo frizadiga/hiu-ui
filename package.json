@@ -1,6 +1,6 @@
 {
   "name": "ikan",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Composable & Strong Impression UI",
   "main": "./dist/js/ikan.js",
   "scripts": {
