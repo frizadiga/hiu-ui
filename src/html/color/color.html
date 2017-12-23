@@ -1,0 +1,15 @@
+<script src="./assets/axios.js"></script>
+<script src="./assets/template.js"></script>
+<body>
+  
+<div id="component" data-component-name="color">
+  <div class="i-container i-red">
+    <h2>Container red</h2>
+    <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+  </div>
+  <script>
+    var component = document.getElementById('component');
+    component.insertAdjacentHTML('afterend', '<p>footer</p>');
+  </script>
+</div>
+</body>

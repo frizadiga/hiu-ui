@@ -4,11 +4,11 @@
   "description": "Composable & Strong Impression UI",
   "main": "./dist/js/ikan.js",
   "scripts": {
-    "html": "live-server --watch=src,dist --port=1771 --no-browser",
-    "wds": "webpack-dev-server --config webpack.dev.js",
-    "dev": "concurrently -k \"npm run watch\" \"npm run html\" ",
-    "watch": "webpack --config webpack.common.js --progress --watch",
-    "build": "webpack --config webpack.prod.js",
+    "bs": "browser-sync start -s -f 'dist' 'src' --port 1111 --no-open",
+    "ls": "live-server --watch=src,dist --port=1111 --no-browser",
+    "dev": "concurrently -k \"npm run watch\" \"npm run ls\" ",
+    "watch": "webpack --config webpack.base.js --progress --watch",
+    "build": "webpack --config webpack.build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -44,12 +44,10 @@
     "live-server": "^1.2.0",
     "node-sass": "^4.7.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
-    "raw-loader": "^0.5.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
     "uglifyjs-webpack-plugin": "^1.1.4",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.7",
     "webpack-merge": "^4.1.1"
   },
   "dependencies": {}

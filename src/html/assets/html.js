@@ -1,3 +1,6 @@
+// import axios from './axios.js';
+// $http = axios;
+
 const ikan = {};
 ikan.includeHTML = function(cb) {
   var z, i, elmnt, file, xhttp;
@@ -13,7 +16,8 @@ ikan.includeHTML = function(cb) {
             elmnt.innerHTML = this.responseText;
             console.log("Page not found.");
           }
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";
+          if (this.status == 404) {
+            elmnt.innerHTML = "Page not found.";
             console.log("Page not found.");
           }
           elmnt.removeAttribute("ikan-include-html");
@@ -28,4 +32,7 @@ ikan.includeHTML = function(cb) {
   if (cb) cb();
 };
 
-ikan.includeHTML();
+function ikanLink(link){
+  document.getElementById('content').setAttribute("ikan-include-html", link);
+  ikan.includeHTML();
+}

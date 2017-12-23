@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Examples - ikan</title>
+  <link rel="stylesheet" href="/dist/css/ikan.css">
+  <link rel="stylesheet" href="../assets/html.css">
+  <link rel="icon" type="image/png" href="./assets/favicon-32x32.png">
+</head>
+<body>
+
+  <!-- SIDE NAVBAR -->
+  <div ikan-include-html="../assets/side-bar.html"></div>
+
+  <div id="main">
+    <div ikan-include-html="../assets/top-bar.html"></div>
+
+    <div id="content" ikan-include-html="./color.html">
+      this is content placeholder
+    </div>
+
+</div>
+  <script src="../assets/html.js"></script>
+  <script src="/dist/js/ikan.js"></script>
+  <script>
+    ikan.includeHTML();
+  </script>
+</body>
+</html>

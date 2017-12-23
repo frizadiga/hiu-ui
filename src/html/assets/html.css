@@ -1,0 +1,21 @@
+.sub-title{
+  margin: 0;
+  padding-left: 16px;
+  font-size: 22px;
+  }
+#main{
+  margin-left: 20%;
+}
+#side-bar{
+  width: 20%;
+  padding: 8px 0 8px 0;
+}
+#side-bar a{
+  padding-left: 24px;
+  /*font-size: 14px;*/
+  /*letter-spacing: .5px;*/
+}
+
+.side-bar-item{
+  
+}
