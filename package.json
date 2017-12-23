@@ -4,8 +4,7 @@
   "description": "Composable & Strong Impression UI",
   "main": "./dist/js/ikan.js",
   "scripts": {
-    "bs": "browser-sync start -s -f 'dist' 'src' --port 1111 --no-open",
-    "ls": "live-server --watch=src,dist --port=1111 --no-browser",
+    "ls": "live-server --watch=src,dist,app --port=1111 --no-browser",
     "dev": "concurrently -k \"npm run watch\" \"npm run ls\" ",
     "watch": "webpack --config webpack.base.js --progress --watch",
     "build": "webpack --config webpack.build.js",

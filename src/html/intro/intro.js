@@ -1,1 +1,1 @@
-alert('intro')
+console.log('intro.js loaded!')
