@@ -1,6 +1,7 @@
 .sub-title{
   margin: 0;
   padding-left: 16px;
+  padding-top: 16px;
   font-size: 22px;
   }
 #main{
@@ -8,14 +9,15 @@
 }
 #side-bar{
   width: 20%;
-  padding: 8px 0 8px 0;
+  padding: 0px 0 8px 0;
 }
 #side-bar a{
-  padding: 16px 24px!important;
+  padding: 16px 24px;
   /*font-size: 14px;*/
   /*letter-spacing: .5px;*/
 }
 
-.side-bar-item{
-  
+#side-bar-search{
+  padding: 14px 16px;
+  top:0;
 }

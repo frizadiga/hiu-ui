@@ -1610,8 +1610,8 @@ h6 {
   opacity: 0.3; }
 
 .i-button:hover {
-  color: #000 !important;
-  background-color: #ccc !important; }
+  color: #000;
+  background-color: #ccc; }
 
 .i-ripple {
   transition: opacity 0s; }
