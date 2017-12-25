@@ -11,7 +11,7 @@
   padding: 8px 0 8px 0;
 }
 #side-bar a{
-  padding-left: 24px;
+  padding: 16px 24px!important;
   /*font-size: 14px;*/
   /*letter-spacing: .5px;*/
 }
