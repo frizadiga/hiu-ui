@@ -1,10 +1,14 @@
+// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/<repository-name>/'
+  }
+} : {}
 module.exports = {
   /*
   ** Headers of the page
   */
-  router: {
-    base: '/ikan/'
-  }
+  ...routerBase,
   head: {
     title: 'ikan-gh-pages',
     meta: [
