@@ -2,6 +2,9 @@ module.exports = {
   /*
   ** Headers of the page
   */
+  router: {
+    base: 'ikan'
+  }
   head: {
     title: 'ikan-gh-pages',
     meta: [
