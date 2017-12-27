@@ -10,8 +10,8 @@
         Composable & Strong Impression UI Framework
       </h2>
       <div class="links">
-        <a href="https://frizadiga.github.io/ikan/" target="_blank" class="button--green">Getting Started</a>
-        <a href="https://frizadiga.github.io/ikan/" target="_blank" class="button--green">Documentation</a>
+        <a href="https://frizadiga.github.io/ikan/" target="_blank" class="button--grey">Getting Started</a>
+        <a href="https://frizadiga.github.io/ikan/" target="_blank" class="button--grey">Documentation</a>
         <a href="https://github.com/frizadiga/ikan" target="_blank" class="button--grey">GitHub</a>
       </div>
     </div>
@@ -30,8 +30,8 @@ export default {
 
 <style>
 #ikan-logo{
-  opacity: .5;
-  width: 50%;
+  /*opacity: .5;*/
+  width: 30%;
 }
 
 .container {
@@ -40,6 +40,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 10vh;
 }
 
 .title {
