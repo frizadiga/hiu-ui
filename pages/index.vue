@@ -1,16 +1,17 @@
 <template>
   <section class="container">
     <div>
-      <logo/>
+      <!-- <logo/> -->
+      <img id="ikan-logo" src="/ikan.png" alt="">
       <h1 class="title">
-        ikan-gh-pages
+        ikan
       </h1>
       <h2 class="subtitle">
-        ikan site
+        Composable & Strong Impression UI Framework
       </h2>
       <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
+        <a href="https://frizadiga.github.io/ikan/" target="_blank" class="button--green">Documentation</a>
+        <a href="https://github.com/frizadiga/ikan" target="_blank" class="button--grey">GitHub</a>
       </div>
     </div>
   </section>
@@ -27,6 +28,11 @@ export default {
 </script>
 
 <style>
+#ikan-logo{
+  opacity: .5;
+  width: 50%;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -46,7 +52,7 @@ export default {
 
 .subtitle {
   font-weight: 300;
-  font-size: 42px;
+  font-size: 23px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
