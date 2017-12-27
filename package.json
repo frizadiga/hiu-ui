@@ -14,7 +14,8 @@
     "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
     "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
     "deploy": "gh-pages -d dist",
-    "deploy2": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy2": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "deploy:gh": "npm run generate:gh-pages && npm run deploy2"
   },
   "dependencies": {
     "nuxt": "^1.0.0-rc11"
