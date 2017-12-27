@@ -2,7 +2,7 @@
   <section class="container">
     <div>
       <!-- <logo/> -->
-      <img id="ikan-logo" src="/ikan.png" alt="">
+      <img id="ikan-logo" src="~/static/ikan.png" alt="">
       <h1 class="title">
         ikan
       </h1>
