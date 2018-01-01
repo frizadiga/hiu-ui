@@ -1,4 +1,4 @@
-# ikan-gh-pages
+# ikan-site
 
 > ikan site
 
