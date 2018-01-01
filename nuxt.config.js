@@ -5,9 +5,16 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   }
 } : {}
 module.exports = {
-  /*
-  ** Headers of the page
-  */
+  // ** Config
+  srcDir: 'src/',
+
+  css: [
+  // ** Transitions Routes
+    'assets/main.css',
+  ],
+  
+  // ** Headers of the page
+  
   ...routerBase,
   head: {
     title: 'ikan - UI Framework',
@@ -20,17 +27,17 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: 'https://frizadiga.github.io/ikan/favicon.ico' }
     ]
   },
-  /*
-  ** Customize the progress bar color
-  */
-  loading: { color: '#3B8070' },
-  /*
-  ** Build configuration
-  */
+  
+  // ** Customize the progress bar color
+  
+  loading: { color: '#35495e' },
+  
+  // ** Build configuration
+  
   build: {
-    /*
-    ** Run ESLint on save
-    */
+    
+    // ** Run ESLint on save
+    
     extend (config, ctx) {
       if (ctx.dev && ctx.isClient) {
         config.module.rules.push({
