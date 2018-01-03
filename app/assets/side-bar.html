@@ -1,7 +1,7 @@
 <nav class="i-sidebar i-card i-bar-block i-collapse i-dark-grey" id="side-bar">
   
   <!-- SEARCHBOX -->
-  <input class="i-input i-dark-grey" placeholder="Search Components..." id="side-bar-search" type="text">
+  <input class="i-input i-dark-grey" onkeyup="ikan.filterHTML('#side-bar', 'a',this.value)" placeholder="Search Components..." id="side-bar-search" type="text">
   
   <div>
   <a href="javascript:void(0)" onclick="close_menu()" class="i-button i-hover-red i-large i-right" style="right:16px;padding-right:23px!important;font-weight:bold;">×</a>
