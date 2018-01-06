@@ -3,10 +3,11 @@ html {
   @extend %extend_2;
   [type=button] {
   }
-}
+}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+
 * {
   //Instead of the line below you could use @include box-sizing($bs)
-  box-sizing: inherit;
+  box-sizing: border-box;
   &:before {
     //Instead of the line below you could use @include box-sizing($bs)
     box-sizing: inherit;
